@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+  <group android:id="@+id/groupad">
+    <item
+        android:id="@+id/nav_adtype"
+        android:orderInCategory="100"
+        android:title="Admin Type"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_ptlist"
+        android:orderInCategory="200"
+        android:title="Patient List"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_docapp"
+        android:orderInCategory="300"
+        android:title="Doctor Verification"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_adlog"
+        android:orderInCategory="400"
+        android:title="Log Out"
+        app:showAsAction="never" />
+  </group>
+</menu>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+  <group android:id="@+id/groupdr">
+    <item
+        android:id="@+id/nav_presc"
+        android:orderInCategory="100"
+        android:title="Add Prescription"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_drptlist"
+        android:orderInCategory="200"
+        android:title="Patient List"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_status"
+        android:orderInCategory="300"
+        android:title="Check Status"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_log"
+        android:orderInCategory="400"
+        android:title="Log Out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/nav_adchat"
+        android:orderInCategory="500"
+        android:title="WhatsApp Chat"
+        app:showAsAction="never" />
+  </group>
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:background = "#336699"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+		<TextView
+		android:text="Receipt No"
+		android:layout_width="255.5dp"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/user"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="20dp"
+		android:textColor="#ff8c1a" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:id="@+id/txtrecptno"
+		android:layout_below="@id/user"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:color="#bb0a1e"
+		android:hint = "Enter Your Receipt No."
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp"  />
+
+	<Button
+		android:text="Get Reports"
+		android:layout_width="124.0dp"
+		android:layout_below="@id/txtrecptno"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:padding="10dp"
+		android:textColor="#336699"
+		android:layout_marginTop="10dp"
+		android:id="@+id/btnEnter"
+		android:backgroundTint="#ff8c1a" />
+
+</RelativeLayout>

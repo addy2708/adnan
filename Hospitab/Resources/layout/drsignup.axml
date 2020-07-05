@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:percent="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<android.support.percent.PercentRelativeLayout 
+    android:paddingTop="0dp"
+	android:paddingBottom="16dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+		<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:id="@+id/dapp7"
+        android:theme="@style/AppTheme.AppBarOverlay">
+		
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/dtoolbar7"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+	<TextView
+		android:text="DOCTOR SIGNUP"
+		percent:layout_widthPercent="100%"
+		android:layout_height="39.0dp"
+		android:id="@+id/headingsignup"
+		android:gravity="center"
+		android:textSize="27dp"
+		android:layout_below="@id/dapp7"
+		android:layout_marginBottom="20dp"
+		android:textColor="#4A69B0" />
+	<TextView
+		android:text="Name"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblname"
+		android:layout_below="@id/headingsignup"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtname"
+		android:layout_below="@id/headingsignup"	
+		android:layout_toRightOf="@id/lblname"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "Enter Your Name (without Dr. prefix)"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<TextView
+		android:text="Degree"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lbldegree"
+		android:layout_below="@id/lblname"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtdegree"
+		android:layout_toRightOf="@id/lbldegree"
+		android:layout_below="@id/txtname"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "Enter Your Degree"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<TextView
+		android:text="Reg No"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblregno"
+		android:layout_below="@id/lbldegree"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtregno"
+		android:layout_toRightOf="@id/lblregno"
+		android:layout_below="@id/txtdegree"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "Enter Your Reg No."
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<TextView
+		android:text="Phone"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblphone"
+		android:layout_below="@id/lblregno"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtphone"
+		android:layout_toRightOf="@id/lblphone"
+		android:layout_below="@id/txtregno"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="number"
+		android:maxLength="10"
+		android:textSize="15dp"
+		android:hint = "Enter Your Phone No."
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<TextView
+		android:text="Email"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblemail"
+		android:layout_below="@id/lblphone"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtemail"
+		android:layout_toRightOf="@id/lblemail"
+		android:layout_below="@id/txtphone"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "Enter Your Email ID"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<TextView
+		android:text="Gender"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblsex"
+		android:layout_below="@id/lblemail"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<Spinner
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/cmbgender"
+		android:layout_toRightOf="@id/lblsex"
+		android:layout_below="@id/txtemail"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:prompt="@string/sex_prompt"
+		android:background="@drawable/SpinStyle"
+		android:textSize="15dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="10.0dp" />
+		<TextView
+		android:text="Username"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lbluser"
+		android:layout_below="@id/lblsex"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtuser"
+		android:layout_toRightOf="@id/lbluser"
+		android:layout_below="@id/cmbgender"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "Enter Your User Name"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<TextView
+		android:text="Password"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblpassword"
+		android:layout_below="@id/lbluser"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:inputType="textPassword"
+		android:id="@+id/txtpassword"
+		android:layout_toRightOf="@id/lblpassword"
+		android:layout_below="@id/txtuser"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:textSize="15dp"
+		android:hint = "Enter Your Password"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+		<TextView
+		android:text="Centre"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="10.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblcentre"
+		android:layout_below="@id/lblpassword"
+		android:textSize="27dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0" />
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtcentre"
+		android:layout_toRightOf="@id/lblcentre"
+		android:layout_below="@id/txtpassword"
+		android:layout_marginLeft="10.0dp"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "Enter Your Default Centre Name"
+		android:layout_marginTop="10dp"
+		android:background="@drawable/EditTextStyle"
+		android:layout_marginRight="10.0dp" />
+	<Button
+		android:text="Doctor"
+		android:layout_below="@id/lblcentre"
+		percent:layout_widthPercent="33%"
+		android:layout_height="39dp"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:textColor="#ffffff"
+		android:id="@+id/btnidoc"
+		android:background="@drawable/buttonstyle" />
+	<Button
+		android:text="Degree"
+		android:layout_toRightOf="@id/btnidoc"
+		android:layout_below="@id/txtcentre"
+		percent:layout_widthPercent="33%"
+		android:layout_height="39dp"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:textColor="#ffffff"
+		android:id="@+id/btnideg"
+		android:background="@drawable/buttonstyle" />
+	<Button
+		android:text="ID PROOF"
+		android:layout_toRightOf="@id/btnideg"
+		android:layout_below="@id/txtcentre"
+		percent:layout_widthPercent="33%"
+		android:layout_height="39dp"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:textColor="#ffffff"
+		android:id="@+id/btniproof"
+		android:background="@drawable/buttonstyle" />
+	<ImageView
+		percent:layout_widthPercent="33%"
+		android:layout_height="120dp"
+		android:id="@+id/imgdoc"
+		android:src="@drawable/patient"
+		android:layout_below="@id/btnidoc"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="10.0dp" />
+	<ImageView 
+		percent:layout_widthPercent="33%"
+		android:layout_height="120dp" 
+		android:id="@+id/imgdegree" 
+		android:src="@drawable/patient" 
+		android:layout_below="@id/btnideg"
+		android:layout_toRightOf="@id/imgdoc"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="10.0dp"/>
+	<ImageView 
+		percent:layout_widthPercent="33%"
+		android:layout_height="120dp"
+		android:layout_marginTop="10.0dp"
+		android:id="@+id/imgidproof" 
+		android:src="@drawable/patient" 
+		android:layout_below="@id/btniproof"
+		android:layout_toRightOf="@id/imgdegree"
+		android:scaleType="fitCenter" />
+	<Button
+		android:text="SIGN UP"
+		android:layout_below="@id/imgdoc"
+		percent:layout_widthPercent="100%"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:textColor="#ffffff"
+		android:id="@+id/btnsignup"
+		android:background="@drawable/buttonstyle" />
+</android.support.percent.PercentRelativeLayout>
+
+</ScrollView>
+
+
+

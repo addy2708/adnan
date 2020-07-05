@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<ImageView
+		android:layout_width="50dp"
+		android:layout_height="40dp"
+		android:src="@drawable/patient"
+		android:id="@+id/ptimage" />
+	<TextView 
+		android:text="Name"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="310dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/TxtName"
+		android:textColor="#ff8c1a"
+		android:layout_toRightOf="@id/ptimage"
+		android:layout_marginLeft="0dp" />
+
+	<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="310dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/TxtRecNumber"
+		android:text="Receipt Number"
+		android:textColor="#ff8c1a"
+		android:layout_below="@id/TxtName"
+		android:layout_toRightOf="@id/ptimage"
+		android:layout_marginLeft="0dp" /> 
+</RelativeLayout>

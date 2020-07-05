@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:percent="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<android.support.percent.PercentRelativeLayout
+	android:paddingTop="0dp"
+	android:paddingBottom="16dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+		<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:id="@+id/dapp3"
+        android:theme="@style/AppTheme.AppBarOverlay">
+		
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/dtoolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+		<TextView
+		android:text="PATIENT LIST (ADMIN VIEW)"
+		percent:layout_widthPercent="100%"
+		android:layout_height="39.0dp"
+		android:layout_marginLeft="0.0dp"
+		android:layout_marginRight="0dp"
+		android:id="@+id/headingadmin"
+		android:layout_below="@id/dapp3"
+		android:gravity="center"
+		android:textSize="22dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="20dp"
+		android:textColor="#4A69B0"/>
+		<TextView
+		android:text="Name"
+		android:layout_width="wrap_content"
+		android:layout_height="32.0dp"
+		android:id="@+id/lbldoc"
+		android:layout_below="@id/headingadmin"
+		android:textSize="25dp"
+		android:layout_marginBottom="0.0dp"
+		android:layout_marginTop="30dp"
+		android:layout_marginRight="10dp"
+		android:textColor="#3b5998" />
+		<Spinner
+		percent:layout_widthPercent="80%"
+		android:layout_height="32dp"
+		android:id="@+id/cbodoc"
+		android:layout_below="@id/headingadmin"
+		android:layout_toRightOf="@id/lbldoc"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:background="@drawable/SpinStyle"
+		android:textSize="15dp"
+		android:prompt="@string/age_prompt"
+		android:layout_marginTop="30dp" />
+		<TextView
+		android:text="From Date"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblfrom"
+		android:layout_below="@id/cbodoc"
+		android:textSize="25dp"
+		android:layout_marginTop="30dp"
+		android:layout_marginBottom="0.0dp"
+		android:textColor="#3b5998" />
+		<EditText
+		percent:layout_widthPercent="100%"
+		android:layout_height="39dp"
+		android:id="@+id/txtfrom"
+		android:layout_below="@id/lblfrom"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "From Date"
+		android:editable="false"
+		android:focusable="false"
+		android:background="@drawable/EditTextStyle" />
+		<TextView
+		android:text="To Date"
+		android:layout_width="wrap_content"
+		android:layout_height="39.0dp"
+		android:layout_marginRight="0.5dp"
+		android:id="@+id/lblto"
+		android:layout_below="@id/txtfrom"
+		android:textSize="25dp"
+		android:layout_marginTop="30dp"
+		android:layout_marginBottom="0.0dp"
+		android:textColor="#3b5998" />
+		<EditText
+		percent:layout_widthPercent="100%"
+		android:layout_height="39dp"
+		android:id="@+id/txtto"
+		android:layout_below="@id/lblto"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="15dp"
+		android:hint = "To Date"
+		android:editable="false"
+		android:focusable="false"
+		android:background="@drawable/EditTextStyle" />
+
+		<Button
+		android:text="Search Patients"
+		android:layout_below="@id/txtto"
+		percent:layout_widthPercent="60%"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/btnSearch"
+		android:background="@drawable/buttonstyle" />
+	</android.support.percent.PercentRelativeLayout>
+
+</ScrollView>

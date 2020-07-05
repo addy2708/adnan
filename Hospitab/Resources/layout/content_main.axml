@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+	
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:singleLine="false"
+		android:paddingTop="100dp"
+		android:gravity="center"
+		android:id="@+id/txtlb"
+		android:textColor="#4A69B0"
+        android:text="Optometry Management System" />
+
+	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/txtlb"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:gravity="center"
+		android:id="@+id/txtdes"
+        android:layout_centerInParent="true"
+		android:singleLine="false"
+		android:textColor="#4A69B0"
+        android:text="An Integrated, Multi-Centre Optometry Managemement System catering the needs of all kinds of Optometry Centres with Cost effective solutions" />
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true">
+
+<ImageView
+		android:layout_width="match_parent"
+		android:layout_height="130dp"
+		android:src="@drawable/titanium"
+		android:id="@+id/clogo" />
+
+		</LinearLayout>
+
+	
+</RelativeLayout>

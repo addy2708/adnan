@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:percent="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<android.support.percent.PercentRelativeLayout
+	android:paddingTop="0dp"
+	android:paddingBottom="16dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:id="@+id/dapp2"
+        android:theme="@style/AppTheme.AppBarOverlay">
+		
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/dtoolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+		<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:gravity="left"
+		android:layout_below="@id/dapp2"
+		android:id="@+id/txtcomp"
+		android:singleLine="false"
+		android:textColor="#4A69B0"
+		android:layout_marginTop="10dp"
+        android:text="M EYE CARE" />
+		<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:gravity="left"
+		android:id="@+id/txtperson"
+		android:layout_below="@id/txtcomp"
+		android:singleLine="false"
+		android:textColor="#4A69B0"
+		android:layout_marginTop="10dp"
+        android:text="Contact Person : Mr. Afzal Shaikh" />
+		<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:gravity="left"
+		android:id="@+id/txtcphone"
+		android:layout_below="@id/txtperson"
+		android:singleLine="false"
+		android:textColor="#4A69B0"
+		android:layout_marginTop="10dp"
+        android:text="Phone No. : +91 76660 96627" />
+		<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="8dp"
+		android:paddingRight="8dp"
+		android:gravity="left"
+		android:id="@+id/txtcnote"
+		android:layout_below="@id/txtcphone"
+		android:singleLine="false"
+		android:layout_marginTop="10dp"
+		android:textColor="#4A69B0"
+        android:text="For any queries please feel free to contact on the above given number." />
+	</android.support.percent.PercentRelativeLayout>
+
+
+</ScrollView>
