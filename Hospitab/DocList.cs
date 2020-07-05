@@ -61,6 +61,7 @@ namespace Hospitab
             }
         }
 
+
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             MenuInflater.Inflate(Resource.Menu.ad_menu, menu);
