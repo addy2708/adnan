@@ -262,7 +262,7 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\EyeEntry.axml">
+    <AndroidResource Include="Resources\layout\Skin_Entry.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -374,6 +374,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\menu\ad_menu.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\rounded_frame_layout.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

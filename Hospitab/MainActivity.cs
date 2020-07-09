@@ -51,7 +51,7 @@ namespace Hospitab
                 RunOnUiThread(
             async () =>
             {
-                var isCloseApp = await AlertAsync(this, "M EYE CARE", "Do you want to close this app?", "Yes", "No");
+                var isCloseApp = await AlertAsync(this, "DERMA-SWASTHA", "Do you want to close this app?", "Yes", "No");
 
                 if (isCloseApp)
                 {
@@ -91,7 +91,7 @@ namespace Hospitab
             {
                 String text = "";// Replace with your message.
 
-                String toNumber = "919324439699"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
+                String toNumber = "919324781366"; // Replace with mobile phone number without +Sign or leading zeros, but with country code
                                                 //Suppose your country is India and your phone number is “xxxxxxxxxx”, then you need to send “91xxxxxxxxxx”.
 
 

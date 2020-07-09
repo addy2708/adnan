@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">M EYE CARE</string>
+    <string name="app_name">DERMA-SWASTHA</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
@@ -10,7 +10,11 @@
     <item>Female</item>
     <item>Other</item>
   </string-array>
-
+  <string name="yn_prompt">Please Select an option</string>
+  <string-array name="yn_array">
+    <item>Yes</item>
+    <item>No</item>
+  </string-array>
   <string name="title_prompt">Choose Title</string>
   <string-array name="title_array">
     <item>Mr.</item>
