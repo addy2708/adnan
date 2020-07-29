@@ -41,7 +41,7 @@
 		android:singleLine="false"
 		android:textColor="#4A69B0"
 		android:layout_marginTop="10dp"
-        android:text="DERMA-SWASTHA" />
+        android:text="MEDI-SWASTHA" />
 		<TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

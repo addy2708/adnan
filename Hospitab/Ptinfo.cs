@@ -104,6 +104,14 @@ namespace Hospitab
         public string emrno;
     }
 
+    public class Medlist
+    {
+        public string medname;
+        public string dosage;
+        public string advice;
+        public string time;
+    }
+
     public class dTableItem
     {
         public string name;

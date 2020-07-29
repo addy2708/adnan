@@ -93,7 +93,7 @@ namespace Hospitab
             RunOnUiThread(
             async () =>
             {
-                var isCloseApp = await AlertAsync(this, "DERMA-SWASTHA", "Do you want to close this app?", "Yes", "No");
+                var isCloseApp = await AlertAsync(this, "MEDI-SWASTHA", "Do you want to close this app?", "Yes", "No");
 
                 if (isCloseApp)
                 {

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingTop="15dp"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:descendantFocusability="beforeDescendants">
+	<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@drawable/ListStyle"
+    android:paddingTop="5dp"
+	android:paddingBottom="5dp"
+	android:paddingLeft="5dp"
+	android:paddingRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="240dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/lblmed"
+		android:text="Med. Name"
+		android:textColor="#4A69B0"
+		android:layout_marginLeft="0dp" />
+		 <TextView android:textAppearance="?android:attr/textAppearanceMedium"
+		android:layout_width="240dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/lbltime"
+		android:layout_toRightOf="@id/lblmed"
+		android:text="Timing"
+		android:textColor="#4A69B0"
+		android:layout_marginLeft="0dp" />
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="240dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/lbladvice"
+		android:text="Advice"
+		android:textColor="#4A69B0"
+		android:layout_below="@id/lblmed"
+		android:layout_marginLeft="0dp" /> 
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="80dp"
+		android:layout_height="wrap_content"
+		android:id="@+id/lbldose"
+		android:text="Dosage"
+		android:textColor="#4A69B0"
+		android:layout_below="@id/lblmed"
+		android:layout_toRightOf="@id/lbladvice"
+		android:layout_marginLeft="0dp" />
+		</android.support.percent.PercentRelativeLayout>
+</FrameLayout>

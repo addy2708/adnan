@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:percent="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/rounded_frame_layout">
+
+		<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="0dp"
+	android:paddingBottom="16dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+		<android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:id="@+id/dapp24"
+        android:theme="@style/AppTheme.AppBarOverlay">
+		
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/dtoolbar24"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+			android:theme="@style/NAppTheme"
+            android:background="#FFFFFF"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+			<TextView
+		android:text="Female Grading"
+		percent:layout_widthPercent="90%"
+		android:layout_height="36.0dp"
+		android:id="@+id/lblfg"
+		android:layout_below="@id/dapp24"
+		android:textSize="30dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="5dp"
+		android:textColor="#3b5998" />
+	<RadioGroup
+        android:id="@+id/radioGroupF"
+		android:layout_below="@id/lblfg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="0dp"
+	android:paddingBottom="0dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+		<ImageView
+		percent:layout_widthPercent="25%"
+		android:layout_height="100dp"
+		android:id="@+id/imgf1"
+		android:src="@drawable/imgf1"
+		android:scaleType="fitCenter"
+		app:layout_marginStartPercent="5%"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="25%"
+		android:layout_height="100dp"
+		android:id="@+id/imgf2"
+		android:layout_toRightOf="@id/imgf1"
+		android:src="@drawable/imgf2"
+		app:layout_marginStartPercent="7.5%"
+		app:layout_marginEndPercent="7.5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="25%"
+		android:layout_height="100dp"
+		android:id="@+id/imgf3"
+		android:layout_toRightOf="@id/imgf2"
+		android:src="@drawable/imgf2"
+        app:layout_marginEndPercent="5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+	<RadioButton
+            android:id="@+id/rbf1"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:text="Type I"
+			android:layout_below="@id/imgf1"
+			app:layout_marginStartPercent="5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbf2"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:text="Type II"
+			android:layout_toRightOf="@id/rbf1"
+			android:layout_below="@id/imgf1"
+			app:layout_marginStartPercent="7.5%"
+			app:layout_marginEndPercent="7.5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbf3"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/rbf2"
+			android:layout_below="@id/imgf1"
+            android:text="Type III"
+			app:layout_marginEndPercent="5%"
+            android:padding="5dp" />
+		<ImageView
+		percent:layout_widthPercent="25%"
+		android:layout_height="100dp"
+		android:id="@+id/imgf4"
+		android:src="@drawable/imgf4"
+		android:scaleType="fitCenter"
+		app:layout_marginStartPercent="5%"
+		app:layout_marginEndPercent="5%"
+		android:layout_below="@id/rbf1"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="25%"
+		android:layout_height="100dp"
+		android:id="@+id/imgf5"
+		android:layout_toRightOf="@id/imgf4"
+		android:src="@drawable/imgf5"
+		app:layout_marginStartPercent="5%"
+		app:layout_marginEndPercent="5%"
+		android:scaleType="fitCenter"
+		android:layout_below="@id/rbf1"
+		android:layout_marginTop="5dp" />
+		<RadioButton
+            android:id="@+id/rbf4"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:text="Type IV"
+			android:layout_below="@id/imgf4"
+			app:layout_marginStartPercent="5%"
+			app:layout_marginEndPercent="5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbf5"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/rbf4"
+			android:layout_below="@id/imgf4"
+            android:text="Type V"
+			app:layout_marginStartPercent="5%"
+			app:layout_marginEndPercent="5%"
+            android:padding="5dp" />
+	</android.support.percent.PercentRelativeLayout>
+    </RadioGroup>
+	<TextView
+		android:text="Male Grading"
+		percent:layout_widthPercent="90%"
+		android:layout_height="36.0dp"
+		android:id="@+id/lblmg"
+		android:layout_below="@id/radioGroupF"
+		android:textSize="30dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="5dp"
+		android:textColor="#3b5998" />
+	<RadioGroup
+        android:id="@+id/radioGroupM"
+		android:layout_below="@id/lblmg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="0dp"
+	android:paddingBottom="0dp"
+	android:paddingLeft="0dp"
+	android:paddingRight="0dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+		<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm1"
+		android:src="@drawable/imgm1"
+		android:scaleType="fitCenter"
+		app:layout_marginStartPercent="5%"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm2"
+		android:layout_toRightOf="@id/imgm1"
+		android:src="@drawable/imgm2"
+		app:layout_marginStartPercent="2.5%"
+		app:layout_marginEndPercent="2.5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm3"
+		android:layout_toRightOf="@id/imgm2"
+		android:src="@drawable/imgm3"
+		app:layout_marginStartPercent="2.5%"
+		app:layout_marginEndPercent="2.5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm3v"
+		android:layout_toRightOf="@id/imgm3"
+		android:src="@drawable/imgm3v"
+        app:layout_marginEndPercent="5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<RadioButton
+            android:id="@+id/rbm1"
+            percent:layout_widthPercent="20%"
+            android:layout_height="wrap_content"
+            android:text="I"
+			android:layout_below="@id/imgm1"
+			app:layout_marginStartPercent="5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbm2"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+            android:text="II"
+			android:layout_toRightOf="@id/rbm1"
+			android:layout_below="@id/imgm1"
+			app:layout_marginStartPercent="2.5%"
+			app:layout_marginEndPercent="2.5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbm3"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/rbm2"
+			android:layout_below="@id/imgm1"
+            android:text="III"
+			app:layout_marginStartPercent="2.5%"
+			app:layout_marginEndPercent="2.5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbm4"
+            percent:layout_widthPercent="25%"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/rbm3"
+			android:layout_below="@id/imgm1"
+            android:text="IIIvertex"
+			app:layout_marginEndPercent="5%"
+            android:padding="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm4"
+		android:layout_below="@id/rbm1"
+		android:src="@drawable/imgm4"
+		android:scaleType="fitCenter"
+		app:layout_marginStartPercent="5%"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm5"
+		android:layout_toRightOf="@id/imgm4"
+		android:src="@drawable/imgm5"
+		android:layout_below="@id/rbm1"
+		app:layout_marginStartPercent="2.5%"
+		app:layout_marginEndPercent="2.5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm6"
+		android:layout_toRightOf="@id/imgm5"
+		android:src="@drawable/imgm6"
+		android:layout_below="@id/rbm1"
+		app:layout_marginStartPercent="2.5%"
+		app:layout_marginEndPercent="2.5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<ImageView
+		percent:layout_widthPercent="20%"
+		android:layout_height="100dp"
+		android:id="@+id/imgm7"
+		android:layout_toRightOf="@id/imgm6"
+		android:src="@drawable/imgm7"
+		android:layout_below="@id/rbm1"
+        app:layout_marginEndPercent="5%"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="5dp" />
+<RadioButton
+            android:id="@+id/rbm5"
+            percent:layout_widthPercent="20%"
+            android:layout_height="wrap_content"
+            android:text="IV"
+			android:layout_below="@id/imgm4"
+			app:layout_marginStartPercent="5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbm6"
+            percent:layout_widthPercent="20%"
+            android:layout_height="wrap_content"
+            android:text="V"
+			android:layout_toRightOf="@id/rbm5"
+			android:layout_below="@id/imgm4"
+			app:layout_marginStartPercent="2.5%"
+			app:layout_marginEndPercent="2.5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbm7"
+            percent:layout_widthPercent="20%"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/rbm6"
+			android:layout_below="@id/imgm4"
+            android:text="VI"
+			app:layout_marginStartPercent="2.5%"
+			app:layout_marginEndPercent="2.5%"
+            android:padding="5dp" />
+<RadioButton
+            android:id="@+id/rbm8"
+            percent:layout_widthPercent="20%"
+            android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/rbm7"
+			android:layout_below="@id/imgm4"
+            android:text="VII"
+			app:layout_marginEndPercent="5%"
+            android:padding="5dp" />
+	</android.support.percent.PercentRelativeLayout>
+    </RadioGroup>
+	<TextView
+		android:text="Name"
+		percent:layout_widthPercent="90%"
+		android:layout_height="32.0dp"
+		android:id="@+id/lbltname"
+		android:layout_below="@id/radioGroupM"
+		android:textSize="20dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:textColor="#3b5998" />
+	<TextView
+		android:text="Age"
+		percent:layout_widthPercent="50%"
+		android:layout_height="32.0dp"
+		android:id="@+id/lbltage"
+		android:layout_below="@id/lbltname"
+		android:textSize="15dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:textColor="#3b5998" />
+	<TextView
+		android:text="Visit No."
+		percent:layout_widthPercent="30%"
+		android:layout_height="32.0dp"
+		android:id="@+id/lbltvisit"
+		android:layout_below="@id/lbltname"
+		android:layout_toRightOf="@id/lbltage"
+		android:textSize="15dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:textColor="#3b5998" />
+	<TextView
+		android:text="Familial History"
+		percent:layout_widthPercent="50%"
+		android:layout_height="32.0dp"
+		android:id="@+id/lblfam"
+		android:layout_below="@id/lbltage"
+		android:textSize="20dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:textColor="#3b5998" />
+	<Spinner
+		percent:layout_widthPercent="30%"
+		android:layout_height="32dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/cmbfam"
+		android:layout_toRightOf="@id/lblfam"
+		android:layout_below="@id/lbltage"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:prompt="@string/yn_prompt"
+		android:background="@drawable/SpinStyle"
+        app:layout_marginEndPercent="5%"
+		android:textSize="15dp" />
+	<TextView
+		android:text="Dandruff"
+		percent:layout_widthPercent="50%"
+		android:layout_height="32.0dp"
+		android:id="@+id/lbldan"
+		android:layout_below="@id/lblfam"
+		android:textSize="20dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:textColor="#3b5998" />
+	<Spinner
+		percent:layout_widthPercent="30%"
+		android:layout_height="32dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/cmbdan"
+		android:layout_toRightOf="@id/lbldan"
+		android:layout_below="@id/lblfam"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:prompt="@string/yn_prompt"
+		android:background="@drawable/SpinStyle"
+        app:layout_marginEndPercent="5%"
+		android:textSize="15dp" />
+	<MultiAutoCompleteTextView  
+		percent:layout_widthPercent="90%"
+		android:layout_height="32dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txthist"
+		android:layout_below="@id/lbldan"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:hint = "H/O Past Medication"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<TextView
+		android:text="Teloqen Effluvium"
+		percent:layout_widthPercent="50%"
+		android:layout_height="32.0dp"
+		android:id="@+id/lbltel"
+		android:layout_below="@id/txthist"
+		android:textSize="20dp"
+		android:layout_marginBottom="0.0dp"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:textColor="#3b5998" />
+	<Spinner
+		percent:layout_widthPercent="30%"
+		android:layout_height="32dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/cmbtel"
+		android:layout_toRightOf="@id/lbltel"
+		android:layout_below="@id/txthist"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:prompt="@string/yn_prompt"
+		android:background="@drawable/SpinStyle"
+        app:layout_marginEndPercent="5%"
+		android:textSize="15dp" />
+	<MultiAutoCompleteTextView  
+		percent:layout_widthPercent="90%"
+		android:layout_height="32dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txttcfeat"
+		android:layout_below="@id/lbltel"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:hint = "Clinical Features"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<MultiAutoCompleteTextView  
+		percent:layout_widthPercent="90%"
+		android:layout_height="32dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txttdiag"
+		android:layout_below="@id/txttcfeat"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:hint = "Diagnosis"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<MultiAutoCompleteTextView  
+		percent:layout_widthPercent="90%"
+		android:layout_height="32dp"
+		android:maxWidth="300dp"
+		android:id="@+id/txtttreat"
+		android:layout_below="@id/txttdiag"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:hint = "Treatment"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_marginTop="10dp"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<AutoCompleteTextView
+		percent:layout_widthPercent="90%"
+		android:layout_height="39dp"
+		android:id="@+id/txttmed"
+		android:layout_below="@id/txtttreat"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:layout_marginTop="10dp"
+		android:hint = "Enter Medicine Name"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<Spinner
+		percent:layout_widthPercent="50%"
+		android:layout_height="32dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/cmbttime"
+		android:layout_below="@id/txttmed"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:prompt="@string/yn_prompt"
+		android:background="@drawable/SpinStyle"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:textSize="15dp" />
+			<EditText
+		percent:layout_widthPercent="30%"
+		android:layout_height="33dp"
+		android:id="@+id/txttdose"
+		android:layout_below="@id/txttmed"
+		android:layout_toRightOf="@id/cmbttime"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="10dp"
+		android:layout_marginTop="10dp"
+		android:hint = "Dosage"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<AutoCompleteTextView
+		percent:layout_widthPercent="60%"
+		android:layout_height="39dp"
+		android:id="@+id/txttadvice"
+		android:layout_below="@id/cmbttime"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:layout_marginTop="10dp"
+		android:hint = "Medicine Advice"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+	<Button
+		android:text="Add"
+		android:layout_below="@id/cmbttime"
+		android:layout_toRightOf="@id/txttadvice"
+		percent:layout_widthPercent="20%"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_height="34dp"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/btntAdd"
+		android:background="@drawable/buttonstyle" />
+			<ListView
+		android:id="@+id/presct_listView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:listSelector="@android:color/transparent"
+		android:cacheColorHint="@android:color/transparent"
+		android:divider="@null"
+		android:layout_below="@id/btntAdd"
+		android:dividerHeight="10dp" />
+	<EditText
+		percent:layout_widthPercent="90%"
+		android:layout_height="39dp"
+		android:id="@+id/txttremarks"
+		android:layout_below="@id/presct_listView"
+		android:ellipsize="start"
+		android:gravity="center"
+		android:inputType="text"
+		android:textSize="12dp"
+		android:layout_marginTop="10dp"
+		android:hint = "Enter Remarks"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:padding="3dp"
+		android:background="@drawable/EditTextStyle" />
+		<Button
+		android:text="Capture Image"
+		android:layout_below="@id/txttremarks"
+		percent:layout_widthPercent="90%"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/btntimg"
+		android:background="@drawable/buttonstyle" />
+		<ImageView
+		percent:layout_widthPercent="90%"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_height="wrap_content"
+		android:id="@+id/imgtpower"
+		android:src="@drawable/imgfile"
+		android:layout_below="@id/btntimg"
+		android:scaleType="fitCenter"
+		android:layout_marginTop="10.0dp" />
+		<Button
+		android:text="Save Data"
+		android:layout_below="@id/imgtpower"
+		percent:layout_widthPercent="90%"
+		app:layout_marginStartPercent="5%"
+        app:layout_marginEndPercent="5%"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_marginTop="10dp"
+		android:id="@+id/btntSave"
+		android:background="@drawable/buttonstyle" />
+</android.support.percent.PercentRelativeLayout>
+
+	</FrameLayout>
+
+</ScrollView>
+
+

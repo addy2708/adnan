@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">DERMA-SWASTHA</string>
+    <string name="app_name">MEDI-SWASTHA</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
@@ -14,6 +14,16 @@
   <string-array name="yn_array">
     <item>Yes</item>
     <item>No</item>
+  </string-array>
+  <string name="time_prompt">Please Select an option</string>
+  <string-array name="time_array">
+    <item>1-0-0</item>
+    <item>1-0-1</item>
+    <item>1-1-0</item>
+    <item>1-1-1</item>
+    <item>0-1-1</item>
+    <item>0-0-1</item>
+    <item>0-1-0</item>
   </string-array>
   <string name="title_prompt">Choose Title</string>
   <string-array name="title_array">

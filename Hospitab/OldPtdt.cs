@@ -18,6 +18,7 @@ namespace Hospitab
     public class OldPtdt : AppCompatActivity
     {
         ListView LView;
+         
         private int progressBarStatus;
         protected override void OnCreate(Bundle savedInstanceState)
         {

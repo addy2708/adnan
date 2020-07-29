@@ -29,18 +29,28 @@
     </android.support.design.widget.AppBarLayout>
 		
 		<Button
-		android:text="Add Prescription"
+		android:text="Dermatology Prescription"
 		percent:layout_widthPercent="60%"
 		android:layout_height="wrap_content"
 		android:padding="10dp"
 		android:layout_marginTop="100dp"
 		android:layout_centerHorizontal="true"
-		android:id="@+id/btnPresc"
+		android:id="@+id/btnDPresc"
 		android:layout_below="@id/dtoolbar"
 		android:background="@drawable/buttonstyle" />
 		<Button
+		android:text="Trichology Prescription"
+		percent:layout_widthPercent="60%"
+		android:layout_below="@id/btnDPresc"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:layout_marginTop="20dp"
+		android:layout_centerHorizontal="true"
+		android:id="@+id/btnTPresc"
+		android:background="@drawable/buttonstyle" />
+		<Button
 		android:text="Doctor Patient List"
-		android:layout_below="@id/btnPresc"
+		android:layout_below="@id/btnTPresc"
 		percent:layout_widthPercent="60%"
 		android:layout_height="wrap_content"
 		android:padding="10dp"

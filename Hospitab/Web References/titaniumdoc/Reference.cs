@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace Hospitab.titaniumref {
+namespace Hospitab.titaniumdoc {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -65,11 +65,29 @@ namespace Hospitab.titaniumref {
         
         private System.Threading.SendOrPostCallback DocStatusOperationCompleted;
         
+        private System.Threading.SendOrPostCallback CfeatOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DiagnosisOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TreatmentOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback TemplateSaveOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback MedicineOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback MedAdviceOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback SkinOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetVisitOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback HairOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
         public WebServiceDB() {
-            this.Url = "http://208.78.220.62:90/WebServiceDB.asmx";
+            this.Url = "http://208.78.220.62:92/WebServiceDB.asmx";
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;
@@ -156,6 +174,33 @@ namespace Hospitab.titaniumref {
         
         /// <remarks/>
         public event DocStatusCompletedEventHandler DocStatusCompleted;
+        
+        /// <remarks/>
+        public event CfeatCompletedEventHandler CfeatCompleted;
+        
+        /// <remarks/>
+        public event DiagnosisCompletedEventHandler DiagnosisCompleted;
+        
+        /// <remarks/>
+        public event TreatmentCompletedEventHandler TreatmentCompleted;
+        
+        /// <remarks/>
+        public event TemplateSaveCompletedEventHandler TemplateSaveCompleted;
+        
+        /// <remarks/>
+        public event MedicineCompletedEventHandler MedicineCompleted;
+        
+        /// <remarks/>
+        public event MedAdviceCompletedEventHandler MedAdviceCompleted;
+        
+        /// <remarks/>
+        public event SkinCompletedEventHandler SkinCompleted;
+        
+        /// <remarks/>
+        public event GetVisitCompletedEventHandler GetVisitCompleted;
+        
+        /// <remarks/>
+        public event HairCompletedEventHandler HairCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Register", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -879,6 +924,443 @@ namespace Hospitab.titaniumref {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/CfList", RequestElementName="CfList", RequestNamespace="http://tempuri.org/", ResponseElementName="CfListResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("CfListResult")]
+        public ReturnData Cfeat() {
+            object[] results = this.Invoke("Cfeat", new object[0]);
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void CfeatAsync() {
+            this.CfeatAsync(null);
+        }
+        
+        /// <remarks/>
+        public void CfeatAsync(object userState) {
+            if ((this.CfeatOperationCompleted == null)) {
+                this.CfeatOperationCompleted = new System.Threading.SendOrPostCallback(this.OnCfeatOperationCompleted);
+            }
+            this.InvokeAsync("Cfeat", new object[0], this.CfeatOperationCompleted, userState);
+        }
+        
+        private void OnCfeatOperationCompleted(object arg) {
+            if ((this.CfeatCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.CfeatCompleted(this, new CfeatCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Diag", RequestElementName="Diag", RequestNamespace="http://tempuri.org/", ResponseElementName="DiagResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("DiagResult")]
+        public ReturnData Diagnosis() {
+            object[] results = this.Invoke("Diagnosis", new object[0]);
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void DiagnosisAsync() {
+            this.DiagnosisAsync(null);
+        }
+        
+        /// <remarks/>
+        public void DiagnosisAsync(object userState) {
+            if ((this.DiagnosisOperationCompleted == null)) {
+                this.DiagnosisOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDiagnosisOperationCompleted);
+            }
+            this.InvokeAsync("Diagnosis", new object[0], this.DiagnosisOperationCompleted, userState);
+        }
+        
+        private void OnDiagnosisOperationCompleted(object arg) {
+            if ((this.DiagnosisCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DiagnosisCompleted(this, new DiagnosisCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Treat", RequestElementName="Treat", RequestNamespace="http://tempuri.org/", ResponseElementName="TreatResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("TreatResult")]
+        public ReturnData Treatment() {
+            object[] results = this.Invoke("Treatment", new object[0]);
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TreatmentAsync() {
+            this.TreatmentAsync(null);
+        }
+        
+        /// <remarks/>
+        public void TreatmentAsync(object userState) {
+            if ((this.TreatmentOperationCompleted == null)) {
+                this.TreatmentOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTreatmentOperationCompleted);
+            }
+            this.InvokeAsync("Treatment", new object[0], this.TreatmentOperationCompleted, userState);
+        }
+        
+        private void OnTreatmentOperationCompleted(object arg) {
+            if ((this.TreatmentCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TreatmentCompleted(this, new TreatmentCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/TempSave", RequestElementName="TempSave", RequestNamespace="http://tempuri.org/", ResponseElementName="TempSaveResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("TempSaveResult")]
+        public ReturnData TemplateSave(string temp, string stype) {
+            object[] results = this.Invoke("TemplateSave", new object[] {
+                        temp,
+                        stype});
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void TemplateSaveAsync(string temp, string stype) {
+            this.TemplateSaveAsync(temp, stype, null);
+        }
+        
+        /// <remarks/>
+        public void TemplateSaveAsync(string temp, string stype, object userState) {
+            if ((this.TemplateSaveOperationCompleted == null)) {
+                this.TemplateSaveOperationCompleted = new System.Threading.SendOrPostCallback(this.OnTemplateSaveOperationCompleted);
+            }
+            this.InvokeAsync("TemplateSave", new object[] {
+                        temp,
+                        stype}, this.TemplateSaveOperationCompleted, userState);
+        }
+        
+        private void OnTemplateSaveOperationCompleted(object arg) {
+            if ((this.TemplateSaveCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.TemplateSaveCompleted(this, new TemplateSaveCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/MedList", RequestElementName="MedList", RequestNamespace="http://tempuri.org/", ResponseElementName="MedListResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("MedListResult")]
+        public ReturnData Medicine() {
+            object[] results = this.Invoke("Medicine", new object[0]);
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void MedicineAsync() {
+            this.MedicineAsync(null);
+        }
+        
+        /// <remarks/>
+        public void MedicineAsync(object userState) {
+            if ((this.MedicineOperationCompleted == null)) {
+                this.MedicineOperationCompleted = new System.Threading.SendOrPostCallback(this.OnMedicineOperationCompleted);
+            }
+            this.InvokeAsync("Medicine", new object[0], this.MedicineOperationCompleted, userState);
+        }
+        
+        private void OnMedicineOperationCompleted(object arg) {
+            if ((this.MedicineCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.MedicineCompleted(this, new MedicineCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/MedAdv", RequestElementName="MedAdv", RequestNamespace="http://tempuri.org/", ResponseElementName="MedAdvResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("MedAdvResult")]
+        public ReturnData MedAdvice() {
+            object[] results = this.Invoke("MedAdvice", new object[0]);
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void MedAdviceAsync() {
+            this.MedAdviceAsync(null);
+        }
+        
+        /// <remarks/>
+        public void MedAdviceAsync(object userState) {
+            if ((this.MedAdviceOperationCompleted == null)) {
+                this.MedAdviceOperationCompleted = new System.Threading.SendOrPostCallback(this.OnMedAdviceOperationCompleted);
+            }
+            this.InvokeAsync("MedAdvice", new object[0], this.MedAdviceOperationCompleted, userState);
+        }
+        
+        private void OnMedAdviceOperationCompleted(object arg) {
+            if ((this.MedAdviceCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.MedAdviceCompleted(this, new MedAdviceCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Skin", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public ReturnData Skin(
+                    int rdocid, 
+                    int ryear, 
+                    int rmonth, 
+                    int rday, 
+                    string rageflag, 
+                    string regno, 
+                    string pru, 
+                    string sca, 
+                    string ery, 
+                    string cfeat, 
+                    string diag, 
+                    string treat, 
+                    string remarks, 
+                    string img, 
+                    string amt, 
+                    string mlist, 
+                    string etype) {
+            object[] results = this.Invoke("Skin", new object[] {
+                        rdocid,
+                        ryear,
+                        rmonth,
+                        rday,
+                        rageflag,
+                        regno,
+                        pru,
+                        sca,
+                        ery,
+                        cfeat,
+                        diag,
+                        treat,
+                        remarks,
+                        img,
+                        amt,
+                        mlist,
+                        etype});
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void SkinAsync(
+                    int rdocid, 
+                    int ryear, 
+                    int rmonth, 
+                    int rday, 
+                    string rageflag, 
+                    string regno, 
+                    string pru, 
+                    string sca, 
+                    string ery, 
+                    string cfeat, 
+                    string diag, 
+                    string treat, 
+                    string remarks, 
+                    string img, 
+                    string amt, 
+                    string mlist, 
+                    string etype) {
+            this.SkinAsync(rdocid, ryear, rmonth, rday, rageflag, regno, pru, sca, ery, cfeat, diag, treat, remarks, img, amt, mlist, etype, null);
+        }
+        
+        /// <remarks/>
+        public void SkinAsync(
+                    int rdocid, 
+                    int ryear, 
+                    int rmonth, 
+                    int rday, 
+                    string rageflag, 
+                    string regno, 
+                    string pru, 
+                    string sca, 
+                    string ery, 
+                    string cfeat, 
+                    string diag, 
+                    string treat, 
+                    string remarks, 
+                    string img, 
+                    string amt, 
+                    string mlist, 
+                    string etype, 
+                    object userState) {
+            if ((this.SkinOperationCompleted == null)) {
+                this.SkinOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSkinOperationCompleted);
+            }
+            this.InvokeAsync("Skin", new object[] {
+                        rdocid,
+                        ryear,
+                        rmonth,
+                        rday,
+                        rageflag,
+                        regno,
+                        pru,
+                        sca,
+                        ery,
+                        cfeat,
+                        diag,
+                        treat,
+                        remarks,
+                        img,
+                        amt,
+                        mlist,
+                        etype}, this.SkinOperationCompleted, userState);
+        }
+        
+        private void OnSkinOperationCompleted(object arg) {
+            if ((this.SkinCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.SkinCompleted(this, new SkinCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Visit", RequestElementName="Visit", RequestNamespace="http://tempuri.org/", ResponseElementName="VisitResponse", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute("VisitResult")]
+        public ReturnData GetVisit(string regno, string docid, string etype) {
+            object[] results = this.Invoke("GetVisit", new object[] {
+                        regno,
+                        docid,
+                        etype});
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetVisitAsync(string regno, string docid, string etype) {
+            this.GetVisitAsync(regno, docid, etype, null);
+        }
+        
+        /// <remarks/>
+        public void GetVisitAsync(string regno, string docid, string etype, object userState) {
+            if ((this.GetVisitOperationCompleted == null)) {
+                this.GetVisitOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetVisitOperationCompleted);
+            }
+            this.InvokeAsync("GetVisit", new object[] {
+                        regno,
+                        docid,
+                        etype}, this.GetVisitOperationCompleted, userState);
+        }
+        
+        private void OnGetVisitOperationCompleted(object arg) {
+            if ((this.GetVisitCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetVisitCompleted(this, new GetVisitCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/Hair", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public ReturnData Hair(
+                    int rdocid, 
+                    int ryear, 
+                    int rmonth, 
+                    int rday, 
+                    string rageflag, 
+                    string regno, 
+                    string fam, 
+                    string dan, 
+                    string tel, 
+                    string hist, 
+                    string cfeat, 
+                    string diag, 
+                    string treat, 
+                    string remarks, 
+                    string img, 
+                    string amt, 
+                    string mlist, 
+                    string etype) {
+            object[] results = this.Invoke("Hair", new object[] {
+                        rdocid,
+                        ryear,
+                        rmonth,
+                        rday,
+                        rageflag,
+                        regno,
+                        fam,
+                        dan,
+                        tel,
+                        hist,
+                        cfeat,
+                        diag,
+                        treat,
+                        remarks,
+                        img,
+                        amt,
+                        mlist,
+                        etype});
+            return ((ReturnData)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void HairAsync(
+                    int rdocid, 
+                    int ryear, 
+                    int rmonth, 
+                    int rday, 
+                    string rageflag, 
+                    string regno, 
+                    string fam, 
+                    string dan, 
+                    string tel, 
+                    string hist, 
+                    string cfeat, 
+                    string diag, 
+                    string treat, 
+                    string remarks, 
+                    string img, 
+                    string amt, 
+                    string mlist, 
+                    string etype) {
+            this.HairAsync(rdocid, ryear, rmonth, rday, rageflag, regno, fam, dan, tel, hist, cfeat, diag, treat, remarks, img, amt, mlist, etype, null);
+        }
+        
+        /// <remarks/>
+        public void HairAsync(
+                    int rdocid, 
+                    int ryear, 
+                    int rmonth, 
+                    int rday, 
+                    string rageflag, 
+                    string regno, 
+                    string fam, 
+                    string dan, 
+                    string tel, 
+                    string hist, 
+                    string cfeat, 
+                    string diag, 
+                    string treat, 
+                    string remarks, 
+                    string img, 
+                    string amt, 
+                    string mlist, 
+                    string etype, 
+                    object userState) {
+            if ((this.HairOperationCompleted == null)) {
+                this.HairOperationCompleted = new System.Threading.SendOrPostCallback(this.OnHairOperationCompleted);
+            }
+            this.InvokeAsync("Hair", new object[] {
+                        rdocid,
+                        ryear,
+                        rmonth,
+                        rday,
+                        rageflag,
+                        regno,
+                        fam,
+                        dan,
+                        tel,
+                        hist,
+                        cfeat,
+                        diag,
+                        treat,
+                        remarks,
+                        img,
+                        amt,
+                        mlist,
+                        etype}, this.HairOperationCompleted, userState);
+        }
+        
+        private void OnHairOperationCompleted(object arg) {
+            if ((this.HairCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.HairCompleted(this, new HairCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -910,6 +1392,16 @@ namespace Hospitab.titaniumref {
         private string[] npatientsField;
         
         private string[] ncentreField;
+        
+        private string[] nfeatField;
+        
+        private string[] ntreatField;
+        
+        private string[] ndiagField;
+        
+        private string[] nmedicinesField;
+        
+        private string[] nadviceField;
         
         private string ecentreField;
         
@@ -995,6 +1487,8 @@ namespace Hospitab.titaniumref {
         
         private string pimgField;
         
+        private Medlist[] nmlistField;
+        
         /// <remarks/>
         public string Message {
             get {
@@ -1022,6 +1516,56 @@ namespace Hospitab.titaniumref {
             }
             set {
                 this.ncentreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] nfeat {
+            get {
+                return this.nfeatField;
+            }
+            set {
+                this.nfeatField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] ntreat {
+            get {
+                return this.ntreatField;
+            }
+            set {
+                this.ntreatField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] ndiag {
+            get {
+                return this.ndiagField;
+            }
+            set {
+                this.ndiagField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] nmedicines {
+            get {
+                return this.nmedicinesField;
+            }
+            set {
+                this.nmedicinesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] nadvice {
+            get {
+                return this.nadviceField;
+            }
+            set {
+                this.nadviceField = value;
             }
         }
         
@@ -1442,6 +1986,73 @@ namespace Hospitab.titaniumref {
             }
             set {
                 this.pimgField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Medlist[] nmlist {
+            get {
+                return this.nmlistField;
+            }
+            set {
+                this.nmlistField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4084.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class Medlist {
+        
+        private string mednameField;
+        
+        private string dosageField;
+        
+        private string adviceField;
+        
+        private string timeField;
+        
+        /// <remarks/>
+        public string medname {
+            get {
+                return this.mednameField;
+            }
+            set {
+                this.mednameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string dosage {
+            get {
+                return this.dosageField;
+            }
+            set {
+                this.dosageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string advice {
+            get {
+                return this.adviceField;
+            }
+            set {
+                this.adviceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
             }
         }
     }
@@ -1958,6 +2569,240 @@ namespace Hospitab.titaniumref {
         private object[] results;
         
         internal DocStatusCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void CfeatCompletedEventHandler(object sender, CfeatCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class CfeatCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal CfeatCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void DiagnosisCompletedEventHandler(object sender, DiagnosisCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DiagnosisCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DiagnosisCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void TreatmentCompletedEventHandler(object sender, TreatmentCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TreatmentCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TreatmentCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void TemplateSaveCompletedEventHandler(object sender, TemplateSaveCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class TemplateSaveCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal TemplateSaveCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void MedicineCompletedEventHandler(object sender, MedicineCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class MedicineCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal MedicineCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void MedAdviceCompletedEventHandler(object sender, MedAdviceCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class MedAdviceCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal MedAdviceCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void SkinCompletedEventHandler(object sender, SkinCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class SkinCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal SkinCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void GetVisitCompletedEventHandler(object sender, GetVisitCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetVisitCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetVisitCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ReturnData Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ReturnData)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    public delegate void HairCompletedEventHandler(object sender, HairCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.8.4084.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class HairCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal HairCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

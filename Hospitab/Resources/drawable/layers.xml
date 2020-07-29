@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
   <item android:drawable="@color/colorWhite" />
   <item android:gravity="center"/>
-  <bitmap android:src="@drawable/maryamlogo" />
+  <bitmap android:src="@drawable/medilogonew" />
 </layer-list>
 
 

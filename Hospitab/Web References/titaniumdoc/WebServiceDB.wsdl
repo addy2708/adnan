@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Register">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="title" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lname" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Age" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ageflag" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnData">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="npatients" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="ncentre" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="nfeat" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="ntreat" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="ndiag" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="nmedicines" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="nadvice" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="ecentre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pfname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="plname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="paddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pphone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="page" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pregno" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ageflag" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="title" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ndocid" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nyear" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nmonth" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="nday" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="nflag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ndoctors" type="tns:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="trsph" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tlsph" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trcyl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tlcyl" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tlaxis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="traxis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="trvis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tlvis" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tradd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="tladd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ndoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emrno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="visit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nimage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ddegree" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dregno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dphone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="demail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dgender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dcentre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="idoc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ideg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="iproof" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="pimg" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nmlist" type="tns:ArrayOfMedlist" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfMedlist">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Medlist" nillable="true" type="tns:Medlist" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Medlist">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="medname" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="dosage" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="advice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="time" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Login">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PtList">
+        <s:complexType />
+      </s:element>
+      <s:element name="PtListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PtListResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PtDt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PtDtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PtDtResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Opthal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdocid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ryear" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rmonth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rday" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="rageflag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rsph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lsph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rcyl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lcyl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rvis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="lvis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="raxis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="laxis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nrsph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nlsph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nrcyl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nlcyl" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nrvis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nlvis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nraxis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nlaxis" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="arsph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="alsph" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="centre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OpthalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OpthalResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CenList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdocid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CenListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CenListResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocList">
+        <s:complexType />
+      </s:element>
+      <s:element name="DocListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocListResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PtDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="docname" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PtDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PtDetailsResult" type="tns:ReturnPt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ReturnPt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="emrno" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="nlist" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EyePtDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="emrno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EyePtDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EyePtDetailsResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OldPtDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="docid" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="OldPtDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="OldPtDetailsResult" type="tns:ReturnPt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdminLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AdminLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AdminLoginResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorVerfiy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="degree" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="gender" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="centre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgdoc" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgdegree" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="imgproof" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorVerfiyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoctorVerfiyResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dregno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocDetailsResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PendingDocDetails">
+        <s:complexType />
+      </s:element>
+      <s:element name="PendingDocDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PendingDocDetailsResult" type="tns:ReturnPt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorApprove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="docregno" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorApproveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoctorApproveResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorDiscard">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="docregno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorDiscardResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoctorDiscardResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocPtDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fdate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tdate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="docid" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DocPtDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DocPtDetailsResult" type="tns:ReturnPt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dregno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dphone" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoctorStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoctorStatusResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CfList">
+        <s:complexType />
+      </s:element>
+      <s:element name="CfListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CfListResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Diag">
+        <s:complexType />
+      </s:element>
+      <s:element name="DiagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DiagResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Treat">
+        <s:complexType />
+      </s:element>
+      <s:element name="TreatResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TreatResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TempSave">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="temp" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TempSaveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TempSaveResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MedList">
+        <s:complexType />
+      </s:element>
+      <s:element name="MedListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MedListResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MedAdv">
+        <s:complexType />
+      </s:element>
+      <s:element name="MedAdvResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MedAdvResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Skin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdocid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ryear" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rmonth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rday" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="rageflag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pru" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sca" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ery" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfeat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="treat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mlist" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="etype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SkinResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SkinResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Visit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="docid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="etype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VisitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VisitResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Hair">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="rdocid" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ryear" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rmonth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="rday" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="rageflag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="regno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fam" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dan" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="hist" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cfeat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diag" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="treat" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="remarks" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="img" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="amt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mlist" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="etype" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HairResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HairResult" type="tns:ReturnData" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReturnData" nillable="true" type="tns:ReturnData" />
+      <s:element name="ReturnPt" nillable="true" type="tns:ReturnPt" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RegisterSoapIn">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="RegisterSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapIn">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="LoginSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="PtListSoapIn">
+    <wsdl:part name="parameters" element="tns:PtList" />
+  </wsdl:message>
+  <wsdl:message name="PtListSoapOut">
+    <wsdl:part name="parameters" element="tns:PtListResponse" />
+  </wsdl:message>
+  <wsdl:message name="PtDtSoapIn">
+    <wsdl:part name="parameters" element="tns:PtDt" />
+  </wsdl:message>
+  <wsdl:message name="PtDtSoapOut">
+    <wsdl:part name="parameters" element="tns:PtDtResponse" />
+  </wsdl:message>
+  <wsdl:message name="OpthalSoapIn">
+    <wsdl:part name="parameters" element="tns:Opthal" />
+  </wsdl:message>
+  <wsdl:message name="OpthalSoapOut">
+    <wsdl:part name="parameters" element="tns:OpthalResponse" />
+  </wsdl:message>
+  <wsdl:message name="CenListSoapIn">
+    <wsdl:part name="parameters" element="tns:CenList" />
+  </wsdl:message>
+  <wsdl:message name="CenListSoapOut">
+    <wsdl:part name="parameters" element="tns:CenListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocListSoapIn">
+    <wsdl:part name="parameters" element="tns:DocList" />
+  </wsdl:message>
+  <wsdl:message name="DocListSoapOut">
+    <wsdl:part name="parameters" element="tns:DocListResponse" />
+  </wsdl:message>
+  <wsdl:message name="PtDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:PtDetails" />
+  </wsdl:message>
+  <wsdl:message name="PtDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:PtDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="EyePtDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:EyePtDetails" />
+  </wsdl:message>
+  <wsdl:message name="EyePtDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:EyePtDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="OldPtDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:OldPtDetails" />
+  </wsdl:message>
+  <wsdl:message name="OldPtDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:OldPtDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="AdminLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:AdminLogin" />
+  </wsdl:message>
+  <wsdl:message name="AdminLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:AdminLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="DoctorVerfiySoapIn">
+    <wsdl:part name="parameters" element="tns:DoctorVerfiy" />
+  </wsdl:message>
+  <wsdl:message name="DoctorVerfiySoapOut">
+    <wsdl:part name="parameters" element="tns:DoctorVerfiyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:DocDetails" />
+  </wsdl:message>
+  <wsdl:message name="DocDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:DocDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PendingDocDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:PendingDocDetails" />
+  </wsdl:message>
+  <wsdl:message name="PendingDocDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:PendingDocDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DoctorApproveSoapIn">
+    <wsdl:part name="parameters" element="tns:DoctorApprove" />
+  </wsdl:message>
+  <wsdl:message name="DoctorApproveSoapOut">
+    <wsdl:part name="parameters" element="tns:DoctorApproveResponse" />
+  </wsdl:message>
+  <wsdl:message name="DoctorDiscardSoapIn">
+    <wsdl:part name="parameters" element="tns:DoctorDiscard" />
+  </wsdl:message>
+  <wsdl:message name="DoctorDiscardSoapOut">
+    <wsdl:part name="parameters" element="tns:DoctorDiscardResponse" />
+  </wsdl:message>
+  <wsdl:message name="DocPtDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:DocPtDetails" />
+  </wsdl:message>
+  <wsdl:message name="DocPtDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:DocPtDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DoctorStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:DoctorStatus" />
+  </wsdl:message>
+  <wsdl:message name="DoctorStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:DoctorStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="CfListSoapIn">
+    <wsdl:part name="parameters" element="tns:CfList" />
+  </wsdl:message>
+  <wsdl:message name="CfListSoapOut">
+    <wsdl:part name="parameters" element="tns:CfListResponse" />
+  </wsdl:message>
+  <wsdl:message name="DiagSoapIn">
+    <wsdl:part name="parameters" element="tns:Diag" />
+  </wsdl:message>
+  <wsdl:message name="DiagSoapOut">
+    <wsdl:part name="parameters" element="tns:DiagResponse" />
+  </wsdl:message>
+  <wsdl:message name="TreatSoapIn">
+    <wsdl:part name="parameters" element="tns:Treat" />
+  </wsdl:message>
+  <wsdl:message name="TreatSoapOut">
+    <wsdl:part name="parameters" element="tns:TreatResponse" />
+  </wsdl:message>
+  <wsdl:message name="TempSaveSoapIn">
+    <wsdl:part name="parameters" element="tns:TempSave" />
+  </wsdl:message>
+  <wsdl:message name="TempSaveSoapOut">
+    <wsdl:part name="parameters" element="tns:TempSaveResponse" />
+  </wsdl:message>
+  <wsdl:message name="MedListSoapIn">
+    <wsdl:part name="parameters" element="tns:MedList" />
+  </wsdl:message>
+  <wsdl:message name="MedListSoapOut">
+    <wsdl:part name="parameters" element="tns:MedListResponse" />
+  </wsdl:message>
+  <wsdl:message name="MedAdvSoapIn">
+    <wsdl:part name="parameters" element="tns:MedAdv" />
+  </wsdl:message>
+  <wsdl:message name="MedAdvSoapOut">
+    <wsdl:part name="parameters" element="tns:MedAdvResponse" />
+  </wsdl:message>
+  <wsdl:message name="SkinSoapIn">
+    <wsdl:part name="parameters" element="tns:Skin" />
+  </wsdl:message>
+  <wsdl:message name="SkinSoapOut">
+    <wsdl:part name="parameters" element="tns:SkinResponse" />
+  </wsdl:message>
+  <wsdl:message name="VisitSoapIn">
+    <wsdl:part name="parameters" element="tns:Visit" />
+  </wsdl:message>
+  <wsdl:message name="VisitSoapOut">
+    <wsdl:part name="parameters" element="tns:VisitResponse" />
+  </wsdl:message>
+  <wsdl:message name="HairSoapIn">
+    <wsdl:part name="parameters" element="tns:Hair" />
+  </wsdl:message>
+  <wsdl:message name="HairSoapOut">
+    <wsdl:part name="parameters" element="tns:HairResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegisterHttpGetIn">
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="fname" type="s:string" />
+    <wsdl:part name="lname" type="s:string" />
+    <wsdl:part name="Age" type="s:string" />
+    <wsdl:part name="ageflag" type="s:string" />
+    <wsdl:part name="gender" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="img" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegisterHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="LoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="PtListHttpGetIn" />
+  <wsdl:message name="PtListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="PtDtHttpGetIn">
+    <wsdl:part name="regno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PtDtHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="OpthalHttpGetIn">
+    <wsdl:part name="rdocid" type="s:string" />
+    <wsdl:part name="ryear" type="s:string" />
+    <wsdl:part name="rmonth" type="s:string" />
+    <wsdl:part name="rday" type="s:string" />
+    <wsdl:part name="rageflag" type="s:string" />
+    <wsdl:part name="regno" type="s:string" />
+    <wsdl:part name="rsph" type="s:string" />
+    <wsdl:part name="lsph" type="s:string" />
+    <wsdl:part name="rcyl" type="s:string" />
+    <wsdl:part name="lcyl" type="s:string" />
+    <wsdl:part name="rvis" type="s:string" />
+    <wsdl:part name="lvis" type="s:string" />
+    <wsdl:part name="raxis" type="s:string" />
+    <wsdl:part name="laxis" type="s:string" />
+    <wsdl:part name="nrsph" type="s:string" />
+    <wsdl:part name="nlsph" type="s:string" />
+    <wsdl:part name="nrcyl" type="s:string" />
+    <wsdl:part name="nlcyl" type="s:string" />
+    <wsdl:part name="nrvis" type="s:string" />
+    <wsdl:part name="nlvis" type="s:string" />
+    <wsdl:part name="nraxis" type="s:string" />
+    <wsdl:part name="nlaxis" type="s:string" />
+    <wsdl:part name="arsph" type="s:string" />
+    <wsdl:part name="alsph" type="s:string" />
+    <wsdl:part name="centre" type="s:string" />
+    <wsdl:part name="remarks" type="s:string" />
+    <wsdl:part name="img" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OpthalHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="CenListHttpGetIn">
+    <wsdl:part name="rdocid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CenListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="DocListHttpGetIn" />
+  <wsdl:message name="DocListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="PtDetailsHttpGetIn">
+    <wsdl:part name="fdate" type="s:string" />
+    <wsdl:part name="tdate" type="s:string" />
+    <wsdl:part name="docname" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="PtDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnPt" />
+  </wsdl:message>
+  <wsdl:message name="EyePtDetailsHttpGetIn">
+    <wsdl:part name="emrno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="EyePtDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="OldPtDetailsHttpGetIn">
+    <wsdl:part name="docid" type="s:string" />
+    <wsdl:part name="regno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="OldPtDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnPt" />
+  </wsdl:message>
+  <wsdl:message name="AdminLoginHttpGetIn">
+    <wsdl:part name="username" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AdminLoginHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="DoctorVerfiyHttpGetIn">
+    <wsdl:part name="name" type="s:string" />
+    <wsdl:part name="degree" type="s:string" />
+    <wsdl:part name="regno" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="gender" type="s:string" />
+    <wsdl:part name="password" type="s:string" />
+    <wsdl:part name="centre" type="s:string" />
+    <wsdl:part name="imgdoc" type="s:string" />
+    <wsdl:part name="imgdegree" type="s:string" />
+    <wsdl:part name="imgproof" type="s:string" />
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DoctorVerfiyHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="DocDetailsHttpGetIn">
+    <wsdl:part name="dregno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DocDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="PendingDocDetailsHttpGetIn" />
+  <wsdl:message name="PendingDocDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnPt" />
+  </wsdl:message>
+  <wsdl:message name="DoctorApproveHttpGetIn">
+    <wsdl:part name="docregno" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DoctorApproveHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="DoctorDiscardHttpGetIn">
+    <wsdl:part name="docregno" type="s:string" />
+    <wsdl:part name="remarks" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DoctorDiscardHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="DocPtDetailsHttpGetIn">
+    <wsdl:part name="fdate" type="s:string" />
+    <wsdl:part name="tdate" type="s:string" />
+    <wsdl:part name="docid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DocPtDetailsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnPt" />
+  </wsdl:message>
+  <wsdl:message name="DoctorStatusHttpGetIn">
+    <wsdl:part name="dregno" type="s:string" />
+    <wsdl:part name="dphone" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DoctorStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="CfListHttpGetIn" />
+  <wsdl:message name="CfListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="DiagHttpGetIn" />
+  <wsdl:message name="DiagHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="TreatHttpGetIn" />
+  <wsdl:message name="TreatHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="TempSaveHttpGetIn">
+    <wsdl:part name="temp" type="s:string" />
+    <wsdl:part name="stype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TempSaveHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="MedListHttpGetIn" />
+  <wsdl:message name="MedListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="MedAdvHttpGetIn" />
+  <wsdl:message name="MedAdvHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="SkinHttpGetIn">
+    <wsdl:part name="rdocid" type="s:string" />
+    <wsdl:part name="ryear" type="s:string" />
+    <wsdl:part name="rmonth" type="s:string" />
+    <wsdl:part name="rday" type="s:string" />
+    <wsdl:part name="rageflag" type="s:string" />
+    <wsdl:part name="regno" type="s:string" />
+    <wsdl:part name="pru" type="s:string" />
+    <wsdl:part name="sca" type="s:string" />
+    <wsdl:part name="ery" type="s:string" />
+    <wsdl:part name="cfeat" type="s:string" />
+    <wsdl:part name="diag" type="s:string" />
+    <wsdl:part name="treat" type="s:string" />
+    <wsdl:part name="remarks" type="s:string" />
+    <wsdl:part name="img" type="s:string" />
+    <wsdl:part name="amt" type="s:string" />
+    <wsdl:part name="mlist" type="s:string" />
+    <wsdl:part name="etype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SkinHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="VisitHttpGetIn">
+    <wsdl:part name="regno" type="s:string" />
+    <wsdl:part name="docid" type="s:string" />
+    <wsdl:part name="etype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VisitHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:message name="HairHttpGetIn">
+    <wsdl:part name="rdocid" type="s:string" />
+    <wsdl:part name="ryear" type="s:string" />
+    <wsdl:part name="rmonth" type="s:string" />
+    <wsdl:part name="rday" type="s:string" />
+    <wsdl:part name="rageflag" type="s:string" />
+    <wsdl:part name="regno" type="s:string" />
+    <wsdl:part name="fam" type="s:string" />
+    <wsdl:part name="dan" type="s:string" />
+    <wsdl:part name="tel" type="s:string" />
+    <wsdl:part name="hist" type="s:string" />
+    <wsdl:part name="cfeat" type="s:string" />
+    <wsdl:part name="diag" type="s:string" />
+    <wsdl:part name="treat" type="s:string" />
+    <wsdl:part name="remarks" type="s:string" />
+    <wsdl:part name="img" type="s:string" />
+    <wsdl:part name="amt" type="s:string" />
+    <wsdl:part name="mlist" type="s:string" />
+    <wsdl:part name="etype" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="HairHttpGetOut">
+    <wsdl:part name="Body" element="tns:ReturnData" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceDBSoap">
+    <wsdl:operation name="Register">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Register New Patient</wsdl:documentation>
+      <wsdl:input message="tns:RegisterSoapIn" />
+      <wsdl:output message="tns:RegisterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Login</wsdl:documentation>
+      <wsdl:input message="tns:LoginSoapIn" />
+      <wsdl:output message="tns:LoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Patient">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient List</wsdl:documentation>
+      <wsdl:input name="PtList" message="tns:PtListSoapIn" />
+      <wsdl:output name="PtList" message="tns:PtListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PtDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient Details</wsdl:documentation>
+      <wsdl:input name="PtDt" message="tns:PtDtSoapIn" />
+      <wsdl:output name="PtDt" message="tns:PtDtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Opthal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Opthal Data</wsdl:documentation>
+      <wsdl:input message="tns:OpthalSoapIn" />
+      <wsdl:output message="tns:OpthalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Centre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Centre List</wsdl:documentation>
+      <wsdl:input name="CenList" message="tns:CenListSoapIn" />
+      <wsdl:output name="CenList" message="tns:CenListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Doctor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor List</wsdl:documentation>
+      <wsdl:input name="DocList" message="tns:DocListSoapIn" />
+      <wsdl:output name="DocList" message="tns:DocListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PtList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient Details List</wsdl:documentation>
+      <wsdl:input name="PtDetails" message="tns:PtDetailsSoapIn" />
+      <wsdl:output name="PtDetails" message="tns:PtDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EyeDt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient Eye Details</wsdl:documentation>
+      <wsdl:input name="EyePtDetails" message="tns:EyePtDetailsSoapIn" />
+      <wsdl:output name="EyePtDetails" message="tns:EyePtDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OldPtList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Old Patient Details List</wsdl:documentation>
+      <wsdl:input name="OldPtDetails" message="tns:OldPtDetailsSoapIn" />
+      <wsdl:output name="OldPtDetails" message="tns:OldPtDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ALogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Admin Login</wsdl:documentation>
+      <wsdl:input name="AdminLogin" message="tns:AdminLoginSoapIn" />
+      <wsdl:output name="AdminLogin" message="tns:AdminLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocVerify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Verification</wsdl:documentation>
+      <wsdl:input name="DoctorVerfiy" message="tns:DoctorVerfiySoapIn" />
+      <wsdl:output name="DoctorVerfiy" message="tns:DoctorVerfiySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Details</wsdl:documentation>
+      <wsdl:input name="DocDetails" message="tns:DocDetailsSoapIn" />
+      <wsdl:output name="DocDetails" message="tns:DocDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocApprovalList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pending Doctor Approval Details List</wsdl:documentation>
+      <wsdl:input name="PendingDocDetails" message="tns:PendingDocDetailsSoapIn" />
+      <wsdl:output name="PendingDocDetails" message="tns:PendingDocDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocApprove">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Approval</wsdl:documentation>
+      <wsdl:input name="DoctorApprove" message="tns:DoctorApproveSoapIn" />
+      <wsdl:output name="DoctorApprove" message="tns:DoctorApproveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDiscard">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Discard</wsdl:documentation>
+      <wsdl:input name="DoctorDiscard" message="tns:DoctorDiscardSoapIn" />
+      <wsdl:output name="DoctorDiscard" message="tns:DoctorDiscardSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocPtList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Patient Details List</wsdl:documentation>
+      <wsdl:input name="DocPtDetails" message="tns:DocPtDetailsSoapIn" />
+      <wsdl:output name="DocPtDetails" message="tns:DocPtDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Status</wsdl:documentation>
+      <wsdl:input name="DoctorStatus" message="tns:DoctorStatusSoapIn" />
+      <wsdl:output name="DoctorStatus" message="tns:DoctorStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cfeat">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Clinical Features List</wsdl:documentation>
+      <wsdl:input name="CfList" message="tns:CfListSoapIn" />
+      <wsdl:output name="CfList" message="tns:CfListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Diagnosis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Diagnosis List</wsdl:documentation>
+      <wsdl:input name="Diag" message="tns:DiagSoapIn" />
+      <wsdl:output name="Diag" message="tns:DiagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Treatment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Treatment List</wsdl:documentation>
+      <wsdl:input name="Treat" message="tns:TreatSoapIn" />
+      <wsdl:output name="Treat" message="tns:TreatSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TemplateSave">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Template</wsdl:documentation>
+      <wsdl:input name="TempSave" message="tns:TempSaveSoapIn" />
+      <wsdl:output name="TempSave" message="tns:TempSaveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Medicine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Medicine List</wsdl:documentation>
+      <wsdl:input name="MedList" message="tns:MedListSoapIn" />
+      <wsdl:output name="MedList" message="tns:MedListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MedAdvice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Medicine Advice</wsdl:documentation>
+      <wsdl:input name="MedAdv" message="tns:MedAdvSoapIn" />
+      <wsdl:output name="MedAdv" message="tns:MedAdvSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Skin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Skin Data</wsdl:documentation>
+      <wsdl:input message="tns:SkinSoapIn" />
+      <wsdl:output message="tns:SkinSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Visit No.</wsdl:documentation>
+      <wsdl:input name="Visit" message="tns:VisitSoapIn" />
+      <wsdl:output name="Visit" message="tns:VisitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Hair">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Hair Data</wsdl:documentation>
+      <wsdl:input message="tns:HairSoapIn" />
+      <wsdl:output message="tns:HairSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceDBHttpGet">
+    <wsdl:operation name="Register">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Register New Patient</wsdl:documentation>
+      <wsdl:input message="tns:RegisterHttpGetIn" />
+      <wsdl:output message="tns:RegisterHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Login</wsdl:documentation>
+      <wsdl:input message="tns:LoginHttpGetIn" />
+      <wsdl:output message="tns:LoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Patient">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient List</wsdl:documentation>
+      <wsdl:input name="PtList" message="tns:PtListHttpGetIn" />
+      <wsdl:output name="PtList" message="tns:PtListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PtDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient Details</wsdl:documentation>
+      <wsdl:input name="PtDt" message="tns:PtDtHttpGetIn" />
+      <wsdl:output name="PtDt" message="tns:PtDtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Opthal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Opthal Data</wsdl:documentation>
+      <wsdl:input message="tns:OpthalHttpGetIn" />
+      <wsdl:output message="tns:OpthalHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Centre">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Centre List</wsdl:documentation>
+      <wsdl:input name="CenList" message="tns:CenListHttpGetIn" />
+      <wsdl:output name="CenList" message="tns:CenListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Doctor">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor List</wsdl:documentation>
+      <wsdl:input name="DocList" message="tns:DocListHttpGetIn" />
+      <wsdl:output name="DocList" message="tns:DocListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PtList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient Details List</wsdl:documentation>
+      <wsdl:input name="PtDetails" message="tns:PtDetailsHttpGetIn" />
+      <wsdl:output name="PtDetails" message="tns:PtDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EyeDt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Patient Eye Details</wsdl:documentation>
+      <wsdl:input name="EyePtDetails" message="tns:EyePtDetailsHttpGetIn" />
+      <wsdl:output name="EyePtDetails" message="tns:EyePtDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="OldPtList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Old Patient Details List</wsdl:documentation>
+      <wsdl:input name="OldPtDetails" message="tns:OldPtDetailsHttpGetIn" />
+      <wsdl:output name="OldPtDetails" message="tns:OldPtDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ALogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Admin Login</wsdl:documentation>
+      <wsdl:input name="AdminLogin" message="tns:AdminLoginHttpGetIn" />
+      <wsdl:output name="AdminLogin" message="tns:AdminLoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocVerify">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Verification</wsdl:documentation>
+      <wsdl:input name="DoctorVerfiy" message="tns:DoctorVerfiyHttpGetIn" />
+      <wsdl:output name="DoctorVerfiy" message="tns:DoctorVerfiyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Details</wsdl:documentation>
+      <wsdl:input name="DocDetails" message="tns:DocDetailsHttpGetIn" />
+      <wsdl:output name="DocDetails" message="tns:DocDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocApprovalList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Pending Doctor Approval Details List</wsdl:documentation>
+      <wsdl:input name="PendingDocDetails" message="tns:PendingDocDetailsHttpGetIn" />
+      <wsdl:output name="PendingDocDetails" message="tns:PendingDocDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocApprove">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Approval</wsdl:documentation>
+      <wsdl:input name="DoctorApprove" message="tns:DoctorApproveHttpGetIn" />
+      <wsdl:output name="DoctorApprove" message="tns:DoctorApproveHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocDiscard">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Discard</wsdl:documentation>
+      <wsdl:input name="DoctorDiscard" message="tns:DoctorDiscardHttpGetIn" />
+      <wsdl:output name="DoctorDiscard" message="tns:DoctorDiscardHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocPtList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Patient Details List</wsdl:documentation>
+      <wsdl:input name="DocPtDetails" message="tns:DocPtDetailsHttpGetIn" />
+      <wsdl:output name="DocPtDetails" message="tns:DocPtDetailsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DocStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Doctor Status</wsdl:documentation>
+      <wsdl:input name="DoctorStatus" message="tns:DoctorStatusHttpGetIn" />
+      <wsdl:output name="DoctorStatus" message="tns:DoctorStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cfeat">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Clinical Features List</wsdl:documentation>
+      <wsdl:input name="CfList" message="tns:CfListHttpGetIn" />
+      <wsdl:output name="CfList" message="tns:CfListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Diagnosis">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Diagnosis List</wsdl:documentation>
+      <wsdl:input name="Diag" message="tns:DiagHttpGetIn" />
+      <wsdl:output name="Diag" message="tns:DiagHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Treatment">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Treatment List</wsdl:documentation>
+      <wsdl:input name="Treat" message="tns:TreatHttpGetIn" />
+      <wsdl:output name="Treat" message="tns:TreatHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TemplateSave">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Template</wsdl:documentation>
+      <wsdl:input name="TempSave" message="tns:TempSaveHttpGetIn" />
+      <wsdl:output name="TempSave" message="tns:TempSaveHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Medicine">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Medicine List</wsdl:documentation>
+      <wsdl:input name="MedList" message="tns:MedListHttpGetIn" />
+      <wsdl:output name="MedList" message="tns:MedListHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MedAdvice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Medicine Advice</wsdl:documentation>
+      <wsdl:input name="MedAdv" message="tns:MedAdvHttpGetIn" />
+      <wsdl:output name="MedAdv" message="tns:MedAdvHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Skin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Skin Data</wsdl:documentation>
+      <wsdl:input message="tns:SkinHttpGetIn" />
+      <wsdl:output message="tns:SkinHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVisit">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Visit No.</wsdl:documentation>
+      <wsdl:input name="Visit" message="tns:VisitHttpGetIn" />
+      <wsdl:output name="Visit" message="tns:VisitHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Hair">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Save Hair Data</wsdl:documentation>
+      <wsdl:input message="tns:HairHttpGetIn" />
+      <wsdl:output message="tns:HairHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceDBSoap" type="tns:WebServiceDBSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Patient">
+      <soap:operation soapAction="http://tempuri.org/PtList" style="document" />
+      <wsdl:input name="PtList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PtList">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PtDetails">
+      <soap:operation soapAction="http://tempuri.org/PtDt" style="document" />
+      <wsdl:input name="PtDt">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PtDt">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opthal">
+      <soap:operation soapAction="http://tempuri.org/Opthal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Centre">
+      <soap:operation soapAction="http://tempuri.org/CenList" style="document" />
+      <wsdl:input name="CenList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CenList">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Doctor">
+      <soap:operation soapAction="http://tempuri.org/DocList" style="document" />
+      <wsdl:input name="DocList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DocList">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PtList">
+      <soap:operation soapAction="http://tempuri.org/PtDetails" style="document" />
+      <wsdl:input name="PtDetails">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PtDetails">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EyeDt">
+      <soap:operation soapAction="http://tempuri.org/EyePtDetails" style="document" />
+      <wsdl:input name="EyePtDetails">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="EyePtDetails">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OldPtList">
+      <soap:operation soapAction="http://tempuri.org/OldPtDetails" style="document" />
+      <wsdl:input name="OldPtDetails">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="OldPtDetails">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ALogin">
+      <soap:operation soapAction="http://tempuri.org/AdminLogin" style="document" />
+      <wsdl:input name="AdminLogin">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AdminLogin">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocVerify">
+      <soap:operation soapAction="http://tempuri.org/DoctorVerfiy" style="document" />
+      <wsdl:input name="DoctorVerfiy">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorVerfiy">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDt">
+      <soap:operation soapAction="http://tempuri.org/DocDetails" style="document" />
+      <wsdl:input name="DocDetails">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DocDetails">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocApprovalList">
+      <soap:operation soapAction="http://tempuri.org/PendingDocDetails" style="document" />
+      <wsdl:input name="PendingDocDetails">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PendingDocDetails">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocApprove">
+      <soap:operation soapAction="http://tempuri.org/DoctorApprove" style="document" />
+      <wsdl:input name="DoctorApprove">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorApprove">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDiscard">
+      <soap:operation soapAction="http://tempuri.org/DoctorDiscard" style="document" />
+      <wsdl:input name="DoctorDiscard">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorDiscard">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocPtList">
+      <soap:operation soapAction="http://tempuri.org/DocPtDetails" style="document" />
+      <wsdl:input name="DocPtDetails">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DocPtDetails">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocStatus">
+      <soap:operation soapAction="http://tempuri.org/DoctorStatus" style="document" />
+      <wsdl:input name="DoctorStatus">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorStatus">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cfeat">
+      <soap:operation soapAction="http://tempuri.org/CfList" style="document" />
+      <wsdl:input name="CfList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CfList">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diagnosis">
+      <soap:operation soapAction="http://tempuri.org/Diag" style="document" />
+      <wsdl:input name="Diag">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Diag">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Treatment">
+      <soap:operation soapAction="http://tempuri.org/Treat" style="document" />
+      <wsdl:input name="Treat">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Treat">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TemplateSave">
+      <soap:operation soapAction="http://tempuri.org/TempSave" style="document" />
+      <wsdl:input name="TempSave">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TempSave">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Medicine">
+      <soap:operation soapAction="http://tempuri.org/MedList" style="document" />
+      <wsdl:input name="MedList">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MedList">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MedAdvice">
+      <soap:operation soapAction="http://tempuri.org/MedAdv" style="document" />
+      <wsdl:input name="MedAdv">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MedAdv">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Skin">
+      <soap:operation soapAction="http://tempuri.org/Skin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisit">
+      <soap:operation soapAction="http://tempuri.org/Visit" style="document" />
+      <wsdl:input name="Visit">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Visit">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Hair">
+      <soap:operation soapAction="http://tempuri.org/Hair" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceDBSoap12" type="tns:WebServiceDBSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Register">
+      <soap12:operation soapAction="http://tempuri.org/Register" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap12:operation soapAction="http://tempuri.org/Login" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Patient">
+      <soap12:operation soapAction="http://tempuri.org/PtList" style="document" />
+      <wsdl:input name="PtList">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PtList">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PtDetails">
+      <soap12:operation soapAction="http://tempuri.org/PtDt" style="document" />
+      <wsdl:input name="PtDt">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PtDt">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opthal">
+      <soap12:operation soapAction="http://tempuri.org/Opthal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Centre">
+      <soap12:operation soapAction="http://tempuri.org/CenList" style="document" />
+      <wsdl:input name="CenList">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CenList">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Doctor">
+      <soap12:operation soapAction="http://tempuri.org/DocList" style="document" />
+      <wsdl:input name="DocList">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DocList">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PtList">
+      <soap12:operation soapAction="http://tempuri.org/PtDetails" style="document" />
+      <wsdl:input name="PtDetails">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PtDetails">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EyeDt">
+      <soap12:operation soapAction="http://tempuri.org/EyePtDetails" style="document" />
+      <wsdl:input name="EyePtDetails">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="EyePtDetails">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OldPtList">
+      <soap12:operation soapAction="http://tempuri.org/OldPtDetails" style="document" />
+      <wsdl:input name="OldPtDetails">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="OldPtDetails">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ALogin">
+      <soap12:operation soapAction="http://tempuri.org/AdminLogin" style="document" />
+      <wsdl:input name="AdminLogin">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="AdminLogin">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocVerify">
+      <soap12:operation soapAction="http://tempuri.org/DoctorVerfiy" style="document" />
+      <wsdl:input name="DoctorVerfiy">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorVerfiy">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDt">
+      <soap12:operation soapAction="http://tempuri.org/DocDetails" style="document" />
+      <wsdl:input name="DocDetails">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DocDetails">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocApprovalList">
+      <soap12:operation soapAction="http://tempuri.org/PendingDocDetails" style="document" />
+      <wsdl:input name="PendingDocDetails">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="PendingDocDetails">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocApprove">
+      <soap12:operation soapAction="http://tempuri.org/DoctorApprove" style="document" />
+      <wsdl:input name="DoctorApprove">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorApprove">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDiscard">
+      <soap12:operation soapAction="http://tempuri.org/DoctorDiscard" style="document" />
+      <wsdl:input name="DoctorDiscard">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorDiscard">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocPtList">
+      <soap12:operation soapAction="http://tempuri.org/DocPtDetails" style="document" />
+      <wsdl:input name="DocPtDetails">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DocPtDetails">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocStatus">
+      <soap12:operation soapAction="http://tempuri.org/DoctorStatus" style="document" />
+      <wsdl:input name="DoctorStatus">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="DoctorStatus">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cfeat">
+      <soap12:operation soapAction="http://tempuri.org/CfList" style="document" />
+      <wsdl:input name="CfList">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="CfList">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diagnosis">
+      <soap12:operation soapAction="http://tempuri.org/Diag" style="document" />
+      <wsdl:input name="Diag">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Diag">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Treatment">
+      <soap12:operation soapAction="http://tempuri.org/Treat" style="document" />
+      <wsdl:input name="Treat">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Treat">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TemplateSave">
+      <soap12:operation soapAction="http://tempuri.org/TempSave" style="document" />
+      <wsdl:input name="TempSave">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="TempSave">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Medicine">
+      <soap12:operation soapAction="http://tempuri.org/MedList" style="document" />
+      <wsdl:input name="MedList">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MedList">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MedAdvice">
+      <soap12:operation soapAction="http://tempuri.org/MedAdv" style="document" />
+      <wsdl:input name="MedAdv">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MedAdv">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Skin">
+      <soap12:operation soapAction="http://tempuri.org/Skin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisit">
+      <soap12:operation soapAction="http://tempuri.org/Visit" style="document" />
+      <wsdl:input name="Visit">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="Visit">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Hair">
+      <soap12:operation soapAction="http://tempuri.org/Hair" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceDBHttpGet" type="tns:WebServiceDBHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Register">
+      <http:operation location="/Register" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <http:operation location="/Login" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Patient">
+      <http:operation location="/PtList" />
+      <wsdl:input name="PtList">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="PtList">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PtDetails">
+      <http:operation location="/PtDt" />
+      <wsdl:input name="PtDt">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="PtDt">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Opthal">
+      <http:operation location="/Opthal" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Centre">
+      <http:operation location="/CenList" />
+      <wsdl:input name="CenList">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="CenList">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Doctor">
+      <http:operation location="/DocList" />
+      <wsdl:input name="DocList">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DocList">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PtList">
+      <http:operation location="/PtDetails" />
+      <wsdl:input name="PtDetails">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="PtDetails">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EyeDt">
+      <http:operation location="/EyePtDetails" />
+      <wsdl:input name="EyePtDetails">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="EyePtDetails">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OldPtList">
+      <http:operation location="/OldPtDetails" />
+      <wsdl:input name="OldPtDetails">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="OldPtDetails">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ALogin">
+      <http:operation location="/AdminLogin" />
+      <wsdl:input name="AdminLogin">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="AdminLogin">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocVerify">
+      <http:operation location="/DoctorVerfiy" />
+      <wsdl:input name="DoctorVerfiy">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DoctorVerfiy">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDt">
+      <http:operation location="/DocDetails" />
+      <wsdl:input name="DocDetails">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DocDetails">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocApprovalList">
+      <http:operation location="/PendingDocDetails" />
+      <wsdl:input name="PendingDocDetails">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="PendingDocDetails">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocApprove">
+      <http:operation location="/DoctorApprove" />
+      <wsdl:input name="DoctorApprove">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DoctorApprove">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocDiscard">
+      <http:operation location="/DoctorDiscard" />
+      <wsdl:input name="DoctorDiscard">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DoctorDiscard">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocPtList">
+      <http:operation location="/DocPtDetails" />
+      <wsdl:input name="DocPtDetails">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DocPtDetails">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DocStatus">
+      <http:operation location="/DoctorStatus" />
+      <wsdl:input name="DoctorStatus">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="DoctorStatus">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cfeat">
+      <http:operation location="/CfList" />
+      <wsdl:input name="CfList">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="CfList">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Diagnosis">
+      <http:operation location="/Diag" />
+      <wsdl:input name="Diag">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Diag">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Treatment">
+      <http:operation location="/Treat" />
+      <wsdl:input name="Treat">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Treat">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TemplateSave">
+      <http:operation location="/TempSave" />
+      <wsdl:input name="TempSave">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="TempSave">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Medicine">
+      <http:operation location="/MedList" />
+      <wsdl:input name="MedList">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="MedList">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MedAdvice">
+      <http:operation location="/MedAdv" />
+      <wsdl:input name="MedAdv">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="MedAdv">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Skin">
+      <http:operation location="/Skin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetVisit">
+      <http:operation location="/Visit" />
+      <wsdl:input name="Visit">
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output name="Visit">
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Hair">
+      <http:operation location="/Hair" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebServiceDB">
+    <wsdl:port name="WebServiceDBSoap" binding="tns:WebServiceDBSoap">
+      <soap:address location="http://208.78.220.62:92/WebServiceDB.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceDBSoap12" binding="tns:WebServiceDBSoap12">
+      <soap12:address location="http://208.78.220.62:92/WebServiceDB.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceDBHttpGet" binding="tns:WebServiceDBHttpGet">
+      <http:address location="http://208.78.220.62:92/WebServiceDB.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

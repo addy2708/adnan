@@ -38,6 +38,7 @@ namespace Hospitab
         Button btnimg;
         Spinner cbogender;
         ImageView imgpt;
+        string etype;
         string[] names;
         string sageflag = "";
         string sgender = "";
@@ -51,6 +52,7 @@ namespace Hospitab
             SetContentView(Resource.Layout.regpat);
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.dtoolbar1);
             SetSupportActionBar(toolbar);
+            etype = Intent.GetStringExtra("etype") ?? string.Empty;
             cboageflag = FindViewById<Spinner>(Resource.Id.cmbageflag);
             var adapter = ArrayAdapter.CreateFromResource(this, Resource.Array.age_array, Android.Resource.Layout.SimpleSpinnerItem);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
@@ -145,6 +147,7 @@ namespace Hospitab
                 }
             }
         }
+
         private void Btnnew_Click(object sender, EventArgs e)
         {
             if (regno.Text == "")
@@ -211,10 +214,24 @@ namespace Hospitab
                 int gender = cbogender.SelectedItemPosition;
                 sageflag = cboageflag.GetItemAtPosition(ageflag).ToString();
                 sgender = cbogender.GetItemAtPosition(gender).ToString();
-                var activity = new Intent(this, typeof(Eyeentry));
-                activity.PutExtra("Name", fname.Text + " " + lname.Text);
-                activity.PutExtra("Age", age.Text + " " + sageflag + " / " + sgender);
-                StartActivity(activity);
+                if (etype == "Dermatology")
+                {
+                    var activity = new Intent(this, typeof(Skinentry));
+                    activity.PutExtra("Name", fname.Text + " " + lname.Text);
+                    activity.PutExtra("Age", age.Text + " " + sageflag + " / " + sgender);
+                    activity.PutExtra("Regno", regno.Text);
+                    activity.PutExtra("etype", etype);
+                    StartActivity(activity);
+                }
+                else if (etype == "Trichology")
+                {
+                    var activity = new Intent(this, typeof(HairEntry));
+                    activity.PutExtra("Name", fname.Text + " " + lname.Text);
+                    activity.PutExtra("Age", age.Text + " " + sageflag + " / " + sgender);
+                    activity.PutExtra("Regno", regno.Text);
+                    activity.PutExtra("etype", etype);
+                    StartActivity(activity);
+                }
             }
             
         }
@@ -238,10 +255,23 @@ namespace Hospitab
             int gender = cbogender.SelectedItemPosition;
             sageflag = cboageflag.GetItemAtPosition(ageflag).ToString();
             sgender = cbogender.GetItemAtPosition(gender).ToString();
-            var activity = new Intent(this, typeof(Eyeentry));
-            activity.PutExtra("Name", fname.Text + " " + lname.Text);
-            activity.PutExtra("Age", age.Text + " " + sageflag + " / " + sgender);
-            StartActivity(activity);
+            if (etype == "Dermatology")
+            {
+                var activity = new Intent(this, typeof(Skinentry));
+                activity.PutExtra("Name", fname.Text + " " + lname.Text);
+                activity.PutExtra("Age", age.Text + " " + sageflag + " / " + sgender);
+                activity.PutExtra("etype", etype);
+                StartActivity(activity);
+            }
+            else if (etype == "Trichology")
+            {
+                var activity = new Intent(this, typeof(HairEntry));
+                activity.PutExtra("Name", fname.Text + " " + lname.Text);
+                activity.PutExtra("Age", age.Text + " " + sageflag + " / " + sgender);
+                activity.PutExtra("etype", etype);
+                StartActivity(activity);
+            }
+
         }
 
         private void Name_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
@@ -255,16 +285,18 @@ namespace Hospitab
 
         private void LoadPtData()
         {
-            titaniumref.WebServiceDB t2 = new titaniumref.WebServiceDB();
+            titaniumdoc.WebServiceDB t2 = new titaniumdoc.WebServiceDB();
             t2.Timeout = -1;
             t2.PatientCompleted += T2_PatientCompleted;
             t2.PatientAsync();
         }
 
-        private void T2_PatientCompleted(object sender, titaniumref.PatientCompletedEventArgs e)
+        private void T2_PatientCompleted(object sender, titaniumdoc.PatientCompletedEventArgs e)
         {
             names = e.Result.npatients;
-            ArrayAdapter adapter1 = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, names);
+            ArrayAdapter adapter1 = new ArrayAdapter<string>(this, Resource.Layout.list_item, names);
+            //adapter1.Filter.InvokeFilter("");
+            fname.Threshold = 3;
             fname.Adapter = adapter1;
         }
 

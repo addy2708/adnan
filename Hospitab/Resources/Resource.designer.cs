@@ -108,26 +108,29 @@ namespace Hospitab
 		public partial class Array
 		{
 			
-			// aapt resource value: 0x7f0e0003
-			public const int age_array = 2131623939;
+			// aapt resource value: 0x7f0e0004
+			public const int age_array = 2131623940;
+			
+			// aapt resource value: 0x7f0e0006
+			public const int apower_array = 2131623942;
+			
+			// aapt resource value: 0x7f0e0008
+			public const int axis_array = 2131623944;
 			
 			// aapt resource value: 0x7f0e0005
-			public const int apower_array = 2131623941;
-			
-			// aapt resource value: 0x7f0e0007
-			public const int axis_array = 2131623943;
-			
-			// aapt resource value: 0x7f0e0004
-			public const int power_array = 2131623940;
+			public const int power_array = 2131623941;
 			
 			// aapt resource value: 0x7f0e0000
 			public const int sex_array = 2131623936;
 			
 			// aapt resource value: 0x7f0e0002
-			public const int title_array = 2131623938;
+			public const int time_array = 2131623938;
 			
-			// aapt resource value: 0x7f0e0006
-			public const int vision_array = 2131623942;
+			// aapt resource value: 0x7f0e0003
+			public const int title_array = 2131623939;
+			
+			// aapt resource value: 0x7f0e0007
+			public const int vision_array = 2131623943;
 			
 			// aapt resource value: 0x7f0e0001
 			public const int yn_array = 2131623937;
@@ -2318,26 +2321,26 @@ namespace Hospitab
 			// aapt resource value: 0x7f020055
 			public const int avd_hide_password = 2130837589;
 			
-			// aapt resource value: 0x7f020083
-			public const int avd_hide_password_1 = 2130837635;
+			// aapt resource value: 0x7f020096
+			public const int avd_hide_password_1 = 2130837654;
 			
-			// aapt resource value: 0x7f020084
-			public const int avd_hide_password_2 = 2130837636;
+			// aapt resource value: 0x7f020097
+			public const int avd_hide_password_2 = 2130837655;
 			
-			// aapt resource value: 0x7f020085
-			public const int avd_hide_password_3 = 2130837637;
+			// aapt resource value: 0x7f020098
+			public const int avd_hide_password_3 = 2130837656;
 			
 			// aapt resource value: 0x7f020056
 			public const int avd_show_password = 2130837590;
 			
-			// aapt resource value: 0x7f020086
-			public const int avd_show_password_1 = 2130837638;
+			// aapt resource value: 0x7f020099
+			public const int avd_show_password_1 = 2130837657;
 			
-			// aapt resource value: 0x7f020087
-			public const int avd_show_password_2 = 2130837639;
+			// aapt resource value: 0x7f02009a
+			public const int avd_show_password_2 = 2130837658;
 			
-			// aapt resource value: 0x7f020088
-			public const int avd_show_password_3 = 2130837640;
+			// aapt resource value: 0x7f02009b
+			public const int avd_show_password_3 = 2130837659;
 			
 			// aapt resource value: 0x7f020057
 			public const int ButtonStyle = 2130837591;
@@ -2367,109 +2370,166 @@ namespace Hospitab
 			public const int EditTextStyle = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int gradient_bg = 2130837600;
+			public const int flash_screen = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int gradient_bg_hover = 2130837601;
+			public const int gradient_bg = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int help2 = 2130837602;
+			public const int gradient_bg_hover = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_menu_camera = 2130837603;
+			public const int help2 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_menu_gallery = 2130837604;
+			public const int ic_menu_camera = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_menu_manage = 2130837605;
+			public const int ic_menu_gallery = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_menu_send = 2130837606;
+			public const int ic_menu_manage = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_menu_share = 2130837607;
+			public const int ic_menu_send = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_menu_slideshow = 2130837608;
+			public const int ic_menu_share = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int layers = 2130837609;
+			public const int ic_menu_slideshow = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ListStyle = 2130837610;
+			public const int imgf1 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int maryamlogo = 2130837611;
+			public const int imgf2 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int navigation_empty_icon = 2130837612;
+			public const int imgf3 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int notification_action_background = 2130837613;
+			public const int imgf4 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int notification_bg = 2130837614;
+			public const int imgf5 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int notification_bg_low = 2130837615;
+			public const int imgfile = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int notification_bg_low_normal = 2130837616;
+			public const int imgm1 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int notification_bg_low_pressed = 2130837617;
+			public const int imgm2 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int notification_bg_normal = 2130837618;
+			public const int imgm3 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int notification_bg_normal_pressed = 2130837619;
+			public const int imgm3v = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int notification_icon_background = 2130837620;
-			
-			// aapt resource value: 0x7f020081
-			public const int notification_template_icon_bg = 2130837633;
-			
-			// aapt resource value: 0x7f020082
-			public const int notification_template_icon_low_bg = 2130837634;
+			public const int imgm4 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int notification_tile_bg = 2130837621;
+			public const int imgm5 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int notify_panel_notification_icon_bg = 2130837622;
+			public const int imgm6 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int patient = 2130837623;
+			public const int imgm7 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int patient2 = 2130837624;
+			public const int layers = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int phone = 2130837625;
+			public const int ListStyle = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int rounded_frame_layout = 2130837626;
+			public const int maryamlogo = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int side_nav_bar = 2130837627;
+			public const int medilogo = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int SpinStyle = 2130837628;
+			public const int MSlogo = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int titanium = 2130837629;
+			public const int mslogonew = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int tooltip_frame_dark = 2130837630;
+			public const int msnew = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int tooltip_frame_light = 2130837631;
+			public const int navigation_empty_icon = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int whatsapp = 2130837632;
+			public const int notification_action_background = 2130837632;
+			
+			// aapt resource value: 0x7f020081
+			public const int notification_bg = 2130837633;
+			
+			// aapt resource value: 0x7f020082
+			public const int notification_bg_low = 2130837634;
+			
+			// aapt resource value: 0x7f020083
+			public const int notification_bg_low_normal = 2130837635;
+			
+			// aapt resource value: 0x7f020084
+			public const int notification_bg_low_pressed = 2130837636;
+			
+			// aapt resource value: 0x7f020085
+			public const int notification_bg_normal = 2130837637;
+			
+			// aapt resource value: 0x7f020086
+			public const int notification_bg_normal_pressed = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int notification_icon_background = 2130837639;
+			
+			// aapt resource value: 0x7f020094
+			public const int notification_template_icon_bg = 2130837652;
+			
+			// aapt resource value: 0x7f020095
+			public const int notification_template_icon_low_bg = 2130837653;
+			
+			// aapt resource value: 0x7f020088
+			public const int notification_tile_bg = 2130837640;
+			
+			// aapt resource value: 0x7f020089
+			public const int notify_panel_notification_icon_bg = 2130837641;
+			
+			// aapt resource value: 0x7f02008a
+			public const int patient = 2130837642;
+			
+			// aapt resource value: 0x7f02008b
+			public const int patient2 = 2130837643;
+			
+			// aapt resource value: 0x7f02008c
+			public const int phone = 2130837644;
+			
+			// aapt resource value: 0x7f02008d
+			public const int rounded_frame_layout = 2130837645;
+			
+			// aapt resource value: 0x7f02008e
+			public const int side_nav_bar = 2130837646;
+			
+			// aapt resource value: 0x7f02008f
+			public const int SpinStyle = 2130837647;
+			
+			// aapt resource value: 0x7f020090
+			public const int titanium = 2130837648;
+			
+			// aapt resource value: 0x7f020091
+			public const int tooltip_frame_dark = 2130837649;
+			
+			// aapt resource value: 0x7f020092
+			public const int tooltip_frame_light = 2130837650;
+			
+			// aapt resource value: 0x7f020093
+			public const int whatsapp = 2130837651;
 			
 			static Drawable()
 			{
@@ -2502,14 +2562,14 @@ namespace Hospitab
 			// aapt resource value: 0x7f080037
 			public const int SYM = 2131230775;
 			
-			// aapt resource value: 0x7f080152
-			public const int TxtName = 2131231058;
+			// aapt resource value: 0x7f08017e
+			public const int TxtName = 2131231102;
 			
-			// aapt resource value: 0x7f080153
-			public const int TxtRecNumber = 2131231059;
+			// aapt resource value: 0x7f08017f
+			public const int TxtRecNumber = 2131231103;
 			
-			// aapt resource value: 0x7f080135
-			public const int action0 = 2131231029;
+			// aapt resource value: 0x7f08015d
+			public const int action0 = 2131231069;
 			
 			// aapt resource value: 0x7f08007c
 			public const int action_bar = 2131230844;
@@ -2532,17 +2592,17 @@ namespace Hospitab
 			// aapt resource value: 0x7f08005a
 			public const int action_bar_title = 2131230810;
 			
-			// aapt resource value: 0x7f080132
-			public const int action_container = 2131231026;
+			// aapt resource value: 0x7f08015a
+			public const int action_container = 2131231066;
 			
 			// aapt resource value: 0x7f08007d
 			public const int action_context_bar = 2131230845;
 			
-			// aapt resource value: 0x7f080139
-			public const int action_divider = 2131231033;
+			// aapt resource value: 0x7f080161
+			public const int action_divider = 2131231073;
 			
-			// aapt resource value: 0x7f080133
-			public const int action_image = 2131231027;
+			// aapt resource value: 0x7f08015b
+			public const int action_image = 2131231067;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2559,14 +2619,14 @@ namespace Hospitab
 			// aapt resource value: 0x7f08005c
 			public const int action_mode_close_button = 2131230812;
 			
-			// aapt resource value: 0x7f080170
-			public const int action_settings = 2131231088;
+			// aapt resource value: 0x7f0801b2
+			public const int action_settings = 2131231154;
 			
-			// aapt resource value: 0x7f080134
-			public const int action_text = 2131231028;
+			// aapt resource value: 0x7f08015c
+			public const int action_text = 2131231068;
 			
-			// aapt resource value: 0x7f080142
-			public const int actions = 2131231042;
+			// aapt resource value: 0x7f08016a
+			public const int actions = 2131231082;
 			
 			// aapt resource value: 0x7f08005d
 			public const int activity_chooser_view_content = 2131230813;
@@ -2604,47 +2664,53 @@ namespace Hospitab
 			// aapt resource value: 0x7f08003d
 			public const int bottom = 2131230781;
 			
+			// aapt resource value: 0x7f08019b
+			public const int btnAdd = 2131231131;
+			
 			// aapt resource value: 0x7f0800ce
 			public const int btnCheck = 2131230926;
+			
+			// aapt resource value: 0x7f0800d0
+			public const int btnDPresc = 2131230928;
 			
 			// aapt resource value: 0x7f080097
 			public const int btnDocList = 2131230871;
 			
-			// aapt resource value: 0x7f0800d1
-			public const int btnDocPtList = 2131230929;
+			// aapt resource value: 0x7f0800d2
+			public const int btnDocPtList = 2131230930;
 			
-			// aapt resource value: 0x7f08014f
-			public const int btnEnter = 2131231055;
+			// aapt resource value: 0x7f080177
+			public const int btnEnter = 2131231095;
 			
-			// aapt resource value: 0x7f0800d4
-			public const int btnLogin = 2131230932;
+			// aapt resource value: 0x7f0800d5
+			public const int btnLogin = 2131230933;
 			
-			// aapt resource value: 0x7f0800fa
-			public const int btnPhone = 2131230970;
-			
-			// aapt resource value: 0x7f0800d0
-			public const int btnPresc = 2131230928;
+			// aapt resource value: 0x7f0800fb
+			public const int btnPhone = 2131230971;
 			
 			// aapt resource value: 0x7f080098
 			public const int btnPtList = 2131230872;
 			
-			// aapt resource value: 0x7f08011e
-			public const int btnSave = 2131231006;
+			// aapt resource value: 0x7f08019e
+			public const int btnSave = 2131231134;
 			
-			// aapt resource value: 0x7f080126
-			public const int btnSearch = 2131231014;
-			
-			// aapt resource value: 0x7f0800d6
-			public const int btnSignup = 2131230934;
+			// aapt resource value: 0x7f080117
+			public const int btnSearch = 2131230999;
 			
 			// aapt resource value: 0x7f0800d7
-			public const int btnStatus = 2131230935;
+			public const int btnSignup = 2131230935;
 			
-			// aapt resource value: 0x7f080148
-			public const int btnVerify = 2131231048;
+			// aapt resource value: 0x7f0800d8
+			public const int btnStatus = 2131230936;
 			
-			// aapt resource value: 0x7f080149
-			public const int btnVerifyall = 2131231049;
+			// aapt resource value: 0x7f0800d1
+			public const int btnTPresc = 2131230929;
+			
+			// aapt resource value: 0x7f080170
+			public const int btnVerify = 2131231088;
+			
+			// aapt resource value: 0x7f080171
+			public const int btnVerifyall = 2131231089;
 			
 			// aapt resource value: 0x7f080094
 			public const int btnaLogin = 2131230868;
@@ -2661,35 +2727,44 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800b3
 			public const int btndSearch = 2131230899;
 			
-			// aapt resource value: 0x7f0800ec
-			public const int btnideg = 2131230956;
-			
-			// aapt resource value: 0x7f0800eb
-			public const int btnidoc = 2131230955;
-			
-			// aapt resource value: 0x7f08011c
-			public const int btnimg = 2131231004;
-			
 			// aapt resource value: 0x7f0800ed
-			public const int btniproof = 2131230957;
+			public const int btnideg = 2131230957;
 			
-			// aapt resource value: 0x7f08015b
-			public const int btnnew = 2131231067;
+			// aapt resource value: 0x7f0800ec
+			public const int btnidoc = 2131230956;
 			
-			// aapt resource value: 0x7f08015c
-			public const int btnold = 2131231068;
+			// aapt resource value: 0x7f080186
+			public const int btnimg = 2131231110;
 			
-			// aapt resource value: 0x7f0800f1
-			public const int btnsignup = 2131230961;
+			// aapt resource value: 0x7f0800ee
+			public const int btniproof = 2131230958;
+			
+			// aapt resource value: 0x7f080188
+			public const int btnnew = 2131231112;
+			
+			// aapt resource value: 0x7f080189
+			public const int btnold = 2131231113;
+			
+			// aapt resource value: 0x7f0800f2
+			public const int btnsignup = 2131230962;
+			
+			// aapt resource value: 0x7f080149
+			public const int btntAdd = 2131231049;
+			
+			// aapt resource value: 0x7f08014e
+			public const int btntSave = 2131231054;
+			
+			// aapt resource value: 0x7f08014c
+			public const int btntimg = 2131231052;
 			
 			// aapt resource value: 0x7f080063
 			public const int buttonPanel = 2131230819;
 			
-			// aapt resource value: 0x7f080136
-			public const int cancel_action = 2131231030;
+			// aapt resource value: 0x7f08015e
+			public const int cancel_action = 2131231070;
 			
-			// aapt resource value: 0x7f080121
-			public const int cbodoc = 2131231009;
+			// aapt resource value: 0x7f080112
+			public const int cbodoc = 2131230994;
 			
 			// aapt resource value: 0x7f080045
 			public const int center = 2131230789;
@@ -2703,8 +2778,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f080073
 			public const int checkbox = 2131230835;
 			
-			// aapt resource value: 0x7f08013e
-			public const int chronometer = 2131231038;
+			// aapt resource value: 0x7f080166
+			public const int chronometer = 2131231078;
 			
 			// aapt resource value: 0x7f08004e
 			public const int clip_horizontal = 2131230798;
@@ -2715,23 +2790,38 @@ namespace Hospitab
 			// aapt resource value: 0x7f08009d
 			public const int clogo = 2131230877;
 			
-			// aapt resource value: 0x7f080158
-			public const int cmbageflag = 2131231064;
+			// aapt resource value: 0x7f080184
+			public const int cmbageflag = 2131231108;
 			
-			// aapt resource value: 0x7f080118
-			public const int cmbery = 2131231000;
+			// aapt resource value: 0x7f08013e
+			public const int cmbdan = 2131231038;
 			
-			// aapt resource value: 0x7f0800e5
-			public const int cmbgender = 2131230949;
+			// aapt resource value: 0x7f080193
+			public const int cmbery = 2131231123;
 			
-			// aapt resource value: 0x7f080114
-			public const int cmbpru = 2131230996;
+			// aapt resource value: 0x7f08013c
+			public const int cmbfam = 2131231036;
 			
-			// aapt resource value: 0x7f080116
-			public const int cmbsca = 2131230998;
+			// aapt resource value: 0x7f0800e6
+			public const int cmbgender = 2131230950;
 			
-			// aapt resource value: 0x7f080156
-			public const int cmbtitle = 2131231062;
+			// aapt resource value: 0x7f08018f
+			public const int cmbpru = 2131231119;
+			
+			// aapt resource value: 0x7f080191
+			public const int cmbsca = 2131231121;
+			
+			// aapt resource value: 0x7f080141
+			public const int cmbtel = 2131231041;
+			
+			// aapt resource value: 0x7f080198
+			public const int cmbtime = 2131231128;
+			
+			// aapt resource value: 0x7f080182
+			public const int cmbtitle = 2131231106;
+			
+			// aapt resource value: 0x7f080146
+			public const int cmbttime = 2131231046;
 			
 			// aapt resource value: 0x7f080039
 			public const int collapseActionView = 2131230777;
@@ -2751,8 +2841,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f08006c
 			public const int customPanel = 2131230828;
 			
-			// aapt resource value: 0x7f080155
-			public const int dapp1 = 2131231061;
+			// aapt resource value: 0x7f080181
+			public const int dapp1 = 2131231105;
 			
 			// aapt resource value: 0x7f0800b4
 			public const int dapp10 = 2131230900;
@@ -2766,23 +2856,26 @@ namespace Hospitab
 			// aapt resource value: 0x7f08008d
 			public const int dapp13 = 2131230861;
 			
-			// aapt resource value: 0x7f080127
-			public const int dapp2 = 2131231015;
+			// aapt resource value: 0x7f08014f
+			public const int dapp2 = 2131231055;
 			
-			// aapt resource value: 0x7f08011f
-			public const int dapp3 = 2131231007;
+			// aapt resource value: 0x7f080118
+			public const int dapp24 = 2131231000;
 			
-			// aapt resource value: 0x7f08010f
-			public const int dapp4 = 2131230991;
+			// aapt resource value: 0x7f080110
+			public const int dapp3 = 2131230992;
 			
-			// aapt resource value: 0x7f0800f5
-			public const int dapp5 = 2131230965;
+			// aapt resource value: 0x7f08018a
+			public const int dapp4 = 2131231114;
 			
-			// aapt resource value: 0x7f0800f2
-			public const int dapp6 = 2131230962;
+			// aapt resource value: 0x7f0800f6
+			public const int dapp5 = 2131230966;
 			
-			// aapt resource value: 0x7f0800d8
-			public const int dapp7 = 2131230936;
+			// aapt resource value: 0x7f0800f3
+			public const int dapp6 = 2131230963;
+			
+			// aapt resource value: 0x7f0800d9
+			public const int dapp7 = 2131230937;
 			
 			// aapt resource value: 0x7f0800c7
 			public const int dapp9 = 2131230919;
@@ -2817,8 +2910,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800cf
 			public const int dtoolbar = 2131230927;
 			
-			// aapt resource value: 0x7f080154
-			public const int dtoolbar1 = 2131231060;
+			// aapt resource value: 0x7f080180
+			public const int dtoolbar1 = 2131231104;
 			
 			// aapt resource value: 0x7f0800b5
 			public const int dtoolbar10 = 2131230901;
@@ -2832,23 +2925,26 @@ namespace Hospitab
 			// aapt resource value: 0x7f08008e
 			public const int dtoolbar13 = 2131230862;
 			
-			// aapt resource value: 0x7f080128
-			public const int dtoolbar2 = 2131231016;
+			// aapt resource value: 0x7f080150
+			public const int dtoolbar2 = 2131231056;
 			
-			// aapt resource value: 0x7f080120
-			public const int dtoolbar3 = 2131231008;
+			// aapt resource value: 0x7f080119
+			public const int dtoolbar24 = 2131231001;
 			
-			// aapt resource value: 0x7f080110
-			public const int dtoolbar4 = 2131230992;
+			// aapt resource value: 0x7f080111
+			public const int dtoolbar3 = 2131230993;
 			
-			// aapt resource value: 0x7f0800f6
-			public const int dtoolbar5 = 2131230966;
+			// aapt resource value: 0x7f08018b
+			public const int dtoolbar4 = 2131231115;
 			
-			// aapt resource value: 0x7f0800f3
-			public const int dtoolbar6 = 2131230963;
+			// aapt resource value: 0x7f0800f7
+			public const int dtoolbar5 = 2131230967;
 			
-			// aapt resource value: 0x7f0800d9
-			public const int dtoolbar7 = 2131230937;
+			// aapt resource value: 0x7f0800f4
+			public const int dtoolbar6 = 2131230964;
+			
+			// aapt resource value: 0x7f0800da
+			public const int dtoolbar7 = 2131230938;
 			
 			// aapt resource value: 0x7f0800c8
 			public const int dtoolbar9 = 2131230920;
@@ -2856,14 +2952,14 @@ namespace Hospitab
 			// aapt resource value: 0x7f08007e
 			public const int edit_query = 2131230846;
 			
-			// aapt resource value: 0x7f0800f4
-			public const int emr_listView = 2131230964;
+			// aapt resource value: 0x7f0800f5
+			public const int emr_listView = 2131230965;
 			
 			// aapt resource value: 0x7f080030
 			public const int end = 2131230768;
 			
-			// aapt resource value: 0x7f080144
-			public const int end_padder = 2131231044;
+			// aapt resource value: 0x7f08016c
+			public const int end_padder = 2131231084;
 			
 			// aapt resource value: 0x7f08003f
 			public const int enterAlways = 2131230783;
@@ -2901,11 +2997,11 @@ namespace Hospitab
 			// aapt resource value: 0x7f08000a
 			public const int ghost_view = 2131230730;
 			
-			// aapt resource value: 0x7f080165
-			public const int groupad = 2131231077;
+			// aapt resource value: 0x7f0801a7
+			public const int groupad = 2131231143;
 			
-			// aapt resource value: 0x7f08016a
-			public const int groupdr = 2131231082;
+			// aapt resource value: 0x7f0801ac
+			public const int groupdr = 2131231148;
 			
 			// aapt resource value: 0x7f0800ae
 			public const int headingadmin = 2131230894;
@@ -2916,8 +3012,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800c9
 			public const int headinglogin = 2131230921;
 			
-			// aapt resource value: 0x7f0800da
-			public const int headingsignup = 2131230938;
+			// aapt resource value: 0x7f0800db
+			public const int headingsignup = 2131230939;
 			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
@@ -2928,8 +3024,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f080062
 			public const int icon = 2131230818;
 			
-			// aapt resource value: 0x7f080143
-			public const int icon_group = 2131231043;
+			// aapt resource value: 0x7f08016b
+			public const int icon_group = 2131231083;
 			
 			// aapt resource value: 0x7f08003a
 			public const int ifRoom = 2131230778;
@@ -2937,8 +3033,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f08005f
 			public const int image = 2131230815;
 			
-			// aapt resource value: 0x7f080131
-			public const int imageView = 2131231025;
+			// aapt resource value: 0x7f080159
+			public const int imageView = 2131231065;
 			
 			// aapt resource value: 0x7f0800c0
 			public const int imgddeg = 2131230912;
@@ -2946,29 +3042,71 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800be
 			public const int imgddoc = 2131230910;
 			
-			// aapt resource value: 0x7f0800ef
-			public const int imgdegree = 2131230959;
+			// aapt resource value: 0x7f0800f0
+			public const int imgdegree = 2131230960;
 			
-			// aapt resource value: 0x7f0800ee
-			public const int imgdoc = 2131230958;
+			// aapt resource value: 0x7f0800ef
+			public const int imgdoc = 2131230959;
 			
 			// aapt resource value: 0x7f0800c2
 			public const int imgdproof = 2131230914;
 			
-			// aapt resource value: 0x7f0800f0
-			public const int imgidproof = 2131230960;
+			// aapt resource value: 0x7f08011c
+			public const int imgf1 = 2131231004;
 			
 			// aapt resource value: 0x7f08011d
-			public const int imgpower = 2131231005;
+			public const int imgf2 = 2131231005;
 			
-			// aapt resource value: 0x7f08010e
-			public const int imgpresc = 2131230990;
+			// aapt resource value: 0x7f08011e
+			public const int imgf3 = 2131231006;
 			
-			// aapt resource value: 0x7f08015a
-			public const int imgpt = 2131231066;
+			// aapt resource value: 0x7f080122
+			public const int imgf4 = 2131231010;
 			
-			// aapt resource value: 0x7f08013f
-			public const int info = 2131231039;
+			// aapt resource value: 0x7f080123
+			public const int imgf5 = 2131231011;
+			
+			// aapt resource value: 0x7f0800f1
+			public const int imgidproof = 2131230961;
+			
+			// aapt resource value: 0x7f080128
+			public const int imgm1 = 2131231016;
+			
+			// aapt resource value: 0x7f080129
+			public const int imgm2 = 2131231017;
+			
+			// aapt resource value: 0x7f08012a
+			public const int imgm3 = 2131231018;
+			
+			// aapt resource value: 0x7f08012b
+			public const int imgm3v = 2131231019;
+			
+			// aapt resource value: 0x7f080130
+			public const int imgm4 = 2131231024;
+			
+			// aapt resource value: 0x7f080131
+			public const int imgm5 = 2131231025;
+			
+			// aapt resource value: 0x7f080132
+			public const int imgm6 = 2131231026;
+			
+			// aapt resource value: 0x7f080133
+			public const int imgm7 = 2131231027;
+			
+			// aapt resource value: 0x7f08019d
+			public const int imgpower = 2131231133;
+			
+			// aapt resource value: 0x7f08010f
+			public const int imgpresc = 2131230991;
+			
+			// aapt resource value: 0x7f080187
+			public const int imgpt = 2131231111;
+			
+			// aapt resource value: 0x7f08014d
+			public const int imgtpower = 2131231053;
+			
+			// aapt resource value: 0x7f080167
+			public const int info = 2131231079;
 			
 			// aapt resource value: 0x7f080059
 			public const int italic = 2131230809;
@@ -2979,14 +3117,20 @@ namespace Hospitab
 			// aapt resource value: 0x7f08009f
 			public const int largeLabel = 2131230879;
 			
-			// aapt resource value: 0x7f080130
-			public const int lblListHeader = 2131231024;
+			// aapt resource value: 0x7f080158
+			public const int lblListHeader = 2131231064;
 			
-			// aapt resource value: 0x7f080111
-			public const int lblage = 2131230993;
+			// aapt resource value: 0x7f08017a
+			public const int lbladvice = 2131231098;
 			
-			// aapt resource value: 0x7f0800e9
-			public const int lblcentre = 2131230953;
+			// aapt resource value: 0x7f08018c
+			public const int lblage = 2131231116;
+			
+			// aapt resource value: 0x7f0800ea
+			public const int lblcentre = 2131230954;
+			
+			// aapt resource value: 0x7f08013d
+			public const int lbldan = 2131231037;
 			
 			// aapt resource value: 0x7f0800bf
 			public const int lbldegree = 2131230911;
@@ -2997,119 +3141,149 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800bd
 			public const int lbldoc = 2131230909;
 			
+			// aapt resource value: 0x7f08017b
+			public const int lbldose = 2131231099;
+			
 			// aapt resource value: 0x7f0800b1
 			public const int lbldto = 2131230897;
 			
-			// aapt resource value: 0x7f0800e2
-			public const int lblemail = 2131230946;
+			// aapt resource value: 0x7f0800e3
+			public const int lblemail = 2131230947;
 			
-			// aapt resource value: 0x7f080117
-			public const int lblery = 2131230999;
+			// aapt resource value: 0x7f080192
+			public const int lblery = 2131231122;
 			
-			// aapt resource value: 0x7f080122
-			public const int lblfrom = 2131231010;
+			// aapt resource value: 0x7f08013b
+			public const int lblfam = 2131231035;
 			
-			// aapt resource value: 0x7f08010c
-			public const int lblladd = 2131230988;
+			// aapt resource value: 0x7f08011a
+			public const int lblfg = 2131231002;
 			
-			// aapt resource value: 0x7f080107
-			public const int lbllall = 2131230983;
+			// aapt resource value: 0x7f080113
+			public const int lblfrom = 2131230995;
 			
-			// aapt resource value: 0x7f08010a
-			public const int lbllaxis = 2131230986;
-			
-			// aapt resource value: 0x7f080109
-			public const int lbllcyl = 2131230985;
+			// aapt resource value: 0x7f08010d
+			public const int lblladd = 2131230989;
 			
 			// aapt resource value: 0x7f080108
-			public const int lbllsph = 2131230984;
+			public const int lbllall = 2131230984;
 			
 			// aapt resource value: 0x7f08010b
-			public const int lbllvis = 2131230987;
+			public const int lbllaxis = 2131230987;
 			
-			// aapt resource value: 0x7f0800db
-			public const int lblname = 2131230939;
+			// aapt resource value: 0x7f08010a
+			public const int lbllcyl = 2131230986;
 			
-			// aapt resource value: 0x7f08012f
-			public const int lblnormal = 2131231023;
+			// aapt resource value: 0x7f080109
+			public const int lbllsph = 2131230985;
 			
-			// aapt resource value: 0x7f0800e8
-			public const int lblpassword = 2131230952;
+			// aapt resource value: 0x7f08010c
+			public const int lbllvis = 2131230988;
+			
+			// aapt resource value: 0x7f080178
+			public const int lblmed = 2131231096;
+			
+			// aapt resource value: 0x7f080126
+			public const int lblmg = 2131231014;
+			
+			// aapt resource value: 0x7f0800dc
+			public const int lblname = 2131230940;
+			
+			// aapt resource value: 0x7f080157
+			public const int lblnormal = 2131231063;
+			
+			// aapt resource value: 0x7f0800e9
+			public const int lblpassword = 2131230953;
 			
 			// aapt resource value: 0x7f0800cc
 			public const int lblphn = 2131230924;
 			
-			// aapt resource value: 0x7f0800e0
-			public const int lblphone = 2131230944;
+			// aapt resource value: 0x7f0800e1
+			public const int lblphone = 2131230945;
 			
 			// aapt resource value: 0x7f0800c1
 			public const int lblproof = 2131230913;
 			
-			// aapt resource value: 0x7f080113
-			public const int lblpru = 2131230995;
+			// aapt resource value: 0x7f08018e
+			public const int lblpru = 2131231118;
 			
-			// aapt resource value: 0x7f080106
-			public const int lblradd = 2131230982;
+			// aapt resource value: 0x7f080107
+			public const int lblradd = 2131230983;
 			
-			// aapt resource value: 0x7f080101
-			public const int lblrall = 2131230977;
+			// aapt resource value: 0x7f080102
+			public const int lblrall = 2131230978;
+			
+			// aapt resource value: 0x7f080105
+			public const int lblraxis = 2131230981;
 			
 			// aapt resource value: 0x7f080104
-			public const int lblraxis = 2131230980;
-			
-			// aapt resource value: 0x7f080103
-			public const int lblrcyl = 2131230979;
+			public const int lblrcyl = 2131230980;
 			
 			// aapt resource value: 0x7f0800ca
 			public const int lblreg = 2131230922;
 			
-			// aapt resource value: 0x7f0800de
-			public const int lblregno = 2131230942;
+			// aapt resource value: 0x7f0800df
+			public const int lblregno = 2131230943;
 			
-			// aapt resource value: 0x7f080102
-			public const int lblrsph = 2131230978;
+			// aapt resource value: 0x7f080103
+			public const int lblrsph = 2131230979;
 			
-			// aapt resource value: 0x7f080105
-			public const int lblrvis = 2131230981;
+			// aapt resource value: 0x7f080106
+			public const int lblrvis = 2131230982;
+			
+			// aapt resource value: 0x7f080190
+			public const int lblsca = 2131231120;
+			
+			// aapt resource value: 0x7f0800e5
+			public const int lblsex = 2131230949;
+			
+			// aapt resource value: 0x7f080139
+			public const int lbltage = 2131231033;
+			
+			// aapt resource value: 0x7f080140
+			public const int lbltel = 2131231040;
+			
+			// aapt resource value: 0x7f080155
+			public const int lbltestname = 2131231061;
+			
+			// aapt resource value: 0x7f080179
+			public const int lbltime = 2131231097;
+			
+			// aapt resource value: 0x7f080138
+			public const int lbltname = 2131231032;
 			
 			// aapt resource value: 0x7f080115
-			public const int lblsca = 2131230997;
+			public const int lblto = 2131230997;
 			
-			// aapt resource value: 0x7f0800e4
-			public const int lblsex = 2131230948;
+			// aapt resource value: 0x7f08013a
+			public const int lbltvisit = 2131231034;
 			
-			// aapt resource value: 0x7f08012d
-			public const int lbltestname = 2131231021;
+			// aapt resource value: 0x7f0800e7
+			public const int lbluser = 2131230951;
 			
-			// aapt resource value: 0x7f080124
-			public const int lblto = 2131231012;
-			
-			// aapt resource value: 0x7f0800e6
-			public const int lbluser = 2131230950;
-			
-			// aapt resource value: 0x7f080100
-			public const int lblvadd = 2131230976;
-			
-			// aapt resource value: 0x7f0800fb
-			public const int lblvall = 2131230971;
-			
-			// aapt resource value: 0x7f08012e
-			public const int lblvalue = 2131231022;
-			
-			// aapt resource value: 0x7f0800fe
-			public const int lblvaxis = 2131230974;
-			
-			// aapt resource value: 0x7f0800fd
-			public const int lblvcyl = 2131230973;
-			
-			// aapt resource value: 0x7f080112
-			public const int lblvisit = 2131230994;
+			// aapt resource value: 0x7f080101
+			public const int lblvadd = 2131230977;
 			
 			// aapt resource value: 0x7f0800fc
-			public const int lblvsph = 2131230972;
+			public const int lblvall = 2131230972;
+			
+			// aapt resource value: 0x7f080156
+			public const int lblvalue = 2131231062;
 			
 			// aapt resource value: 0x7f0800ff
-			public const int lblvvis = 2131230975;
+			public const int lblvaxis = 2131230975;
+			
+			// aapt resource value: 0x7f0800fe
+			public const int lblvcyl = 2131230974;
+			
+			// aapt resource value: 0x7f08018d
+			public const int lblvisit = 2131231117;
+			
+			// aapt resource value: 0x7f0800fd
+			public const int lblvsph = 2131230973;
+			
+			// aapt resource value: 0x7f080100
+			public const int lblvvis = 2131230976;
 			
 			// aapt resource value: 0x7f080049
 			public const int left = 2131230793;
@@ -3126,17 +3300,17 @@ namespace Hospitab
 			// aapt resource value: 0x7f080061
 			public const int list_item = 2131230817;
 			
-			// aapt resource value: 0x7f080147
-			public const int lvExp = 2131231047;
+			// aapt resource value: 0x7f08016f
+			public const int lvExp = 2131231087;
 			
-			// aapt resource value: 0x7f080161
-			public const int masked = 2131231073;
+			// aapt resource value: 0x7f0801a3
+			public const int masked = 2131231139;
 			
-			// aapt resource value: 0x7f080138
-			public const int media_actions = 2131231032;
+			// aapt resource value: 0x7f080160
+			public const int media_actions = 2131231072;
 			
-			// aapt resource value: 0x7f08015d
-			public const int message = 2131231069;
+			// aapt resource value: 0x7f08019f
+			public const int message = 2131231135;
 			
 			// aapt resource value: 0x7f080031
 			public const int middle = 2131230769;
@@ -3147,41 +3321,41 @@ namespace Hospitab
 			// aapt resource value: 0x7f080028
 			public const int multiply = 2131230760;
 			
-			// aapt resource value: 0x7f08016f
-			public const int nav_adchat = 2131231087;
+			// aapt resource value: 0x7f0801b1
+			public const int nav_adchat = 2131231153;
 			
-			// aapt resource value: 0x7f080169
-			public const int nav_adlog = 2131231081;
+			// aapt resource value: 0x7f0801ab
+			public const int nav_adlog = 2131231147;
 			
-			// aapt resource value: 0x7f080166
-			public const int nav_adtype = 2131231078;
+			// aapt resource value: 0x7f0801a8
+			public const int nav_adtype = 2131231144;
 			
-			// aapt resource value: 0x7f080162
-			public const int nav_camera = 2131231074;
+			// aapt resource value: 0x7f0801a4
+			public const int nav_camera = 2131231140;
 			
-			// aapt resource value: 0x7f080168
-			public const int nav_docapp = 2131231080;
+			// aapt resource value: 0x7f0801aa
+			public const int nav_docapp = 2131231146;
 			
-			// aapt resource value: 0x7f08016c
-			public const int nav_drptlist = 2131231084;
+			// aapt resource value: 0x7f0801ae
+			public const int nav_drptlist = 2131231150;
 			
-			// aapt resource value: 0x7f080163
-			public const int nav_gallery = 2131231075;
+			// aapt resource value: 0x7f0801a5
+			public const int nav_gallery = 2131231141;
 			
-			// aapt resource value: 0x7f08016e
-			public const int nav_log = 2131231086;
+			// aapt resource value: 0x7f0801b0
+			public const int nav_log = 2131231152;
 			
-			// aapt resource value: 0x7f080164
-			public const int nav_manage = 2131231076;
+			// aapt resource value: 0x7f0801a6
+			public const int nav_manage = 2131231142;
 			
-			// aapt resource value: 0x7f08016b
-			public const int nav_presc = 2131231083;
+			// aapt resource value: 0x7f0801ad
+			public const int nav_presc = 2131231149;
 			
-			// aapt resource value: 0x7f080167
-			public const int nav_ptlist = 2131231079;
+			// aapt resource value: 0x7f0801a9
+			public const int nav_ptlist = 2131231145;
 			
-			// aapt resource value: 0x7f08016d
-			public const int nav_status = 2131231085;
+			// aapt resource value: 0x7f0801af
+			public const int nav_status = 2131231151;
 			
 			// aapt resource value: 0x7f08008c
 			public const int nav_view = 2131230860;
@@ -3198,14 +3372,14 @@ namespace Hospitab
 			// aapt resource value: 0x7f08001e
 			public const int normal = 2131230750;
 			
-			// aapt resource value: 0x7f080141
-			public const int notification_background = 2131231041;
+			// aapt resource value: 0x7f080169
+			public const int notification_background = 2131231081;
 			
-			// aapt resource value: 0x7f08013b
-			public const int notification_main_column = 2131231035;
+			// aapt resource value: 0x7f080163
+			public const int notification_main_column = 2131231075;
 			
-			// aapt resource value: 0x7f08013a
-			public const int notification_main_column_container = 2131231034;
+			// aapt resource value: 0x7f080162
+			public const int notification_main_column_container = 2131231074;
 			
 			// aapt resource value: 0x7f08004c
 			public const int parallax = 2131230796;
@@ -3219,32 +3393,83 @@ namespace Hospitab
 			// aapt resource value: 0x7f08004d
 			public const int pin = 2131230797;
 			
+			// aapt resource value: 0x7f08019c
+			public const int presc_listView = 2131231132;
+			
+			// aapt resource value: 0x7f08014a
+			public const int presct_listView = 2131231050;
+			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
 			
 			// aapt resource value: 0x7f080007
 			public const int progress_horizontal = 2131230727;
 			
-			// aapt resource value: 0x7f080146
-			public const int ptdetails = 2131231046;
+			// aapt resource value: 0x7f08016e
+			public const int ptdetails = 2131231086;
 			
-			// aapt resource value: 0x7f080150
-			public const int ptimage = 2131231056;
+			// aapt resource value: 0x7f08017c
+			public const int ptimage = 2131231100;
 			
-			// aapt resource value: 0x7f08015f
-			public const int ptlist = 2131231071;
+			// aapt resource value: 0x7f0801a1
+			public const int ptlist = 2131231137;
 			
 			// aapt resource value: 0x7f080075
 			public const int radio = 2131230837;
 			
+			// aapt resource value: 0x7f08011b
+			public const int radioGroupF = 2131231003;
+			
+			// aapt resource value: 0x7f080127
+			public const int radioGroupM = 2131231015;
+			
+			// aapt resource value: 0x7f08011f
+			public const int rbf1 = 2131231007;
+			
+			// aapt resource value: 0x7f080120
+			public const int rbf2 = 2131231008;
+			
+			// aapt resource value: 0x7f080121
+			public const int rbf3 = 2131231009;
+			
+			// aapt resource value: 0x7f080124
+			public const int rbf4 = 2131231012;
+			
+			// aapt resource value: 0x7f080125
+			public const int rbf5 = 2131231013;
+			
+			// aapt resource value: 0x7f08012c
+			public const int rbm1 = 2131231020;
+			
+			// aapt resource value: 0x7f08012d
+			public const int rbm2 = 2131231021;
+			
+			// aapt resource value: 0x7f08012e
+			public const int rbm3 = 2131231022;
+			
+			// aapt resource value: 0x7f08012f
+			public const int rbm4 = 2131231023;
+			
+			// aapt resource value: 0x7f080134
+			public const int rbm5 = 2131231028;
+			
+			// aapt resource value: 0x7f080135
+			public const int rbm6 = 2131231029;
+			
+			// aapt resource value: 0x7f080136
+			public const int rbm7 = 2131231030;
+			
+			// aapt resource value: 0x7f080137
+			public const int rbm8 = 2131231031;
+			
 			// aapt resource value: 0x7f08004a
 			public const int right = 2131230794;
 			
-			// aapt resource value: 0x7f080140
-			public const int right_icon = 2131231040;
+			// aapt resource value: 0x7f080168
+			public const int right_icon = 2131231080;
 			
-			// aapt resource value: 0x7f08013c
-			public const int right_side = 2131231036;
+			// aapt resource value: 0x7f080164
+			public const int right_side = 2131231076;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -3348,8 +3573,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f08004b
 			public const int start = 2131230795;
 			
-			// aapt resource value: 0x7f080137
-			public const int status_bar_latest_event_content = 2131231031;
+			// aapt resource value: 0x7f08015f
+			public const int status_bar_latest_event_content = 2131231071;
 			
 			// aapt resource value: 0x7f080076
 			public const int submenuarrow = 2131230838;
@@ -3384,8 +3609,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f08013d
-			public const int time = 2131231037;
+			// aapt resource value: 0x7f080165
+			public const int time = 2131231077;
 			
 			// aapt resource value: 0x7f08001c
 			public const int title = 2131230748;
@@ -3423,11 +3648,14 @@ namespace Hospitab
 			// aapt resource value: 0x7f080013
 			public const int transition_transform = 2131230739;
 			
-			// aapt resource value: 0x7f080159
-			public const int txtaddr = 2131231065;
+			// aapt resource value: 0x7f080185
+			public const int txtaddr = 2131231109;
 			
-			// aapt resource value: 0x7f08014c
-			public const int txtage = 2131231052;
+			// aapt resource value: 0x7f08019a
+			public const int txtadvice = 2131231130;
+			
+			// aapt resource value: 0x7f080174
+			public const int txtage = 2131231092;
 			
 			// aapt resource value: 0x7f080093
 			public const int txtapassword = 2131230867;
@@ -3435,20 +3663,20 @@ namespace Hospitab
 			// aapt resource value: 0x7f080091
 			public const int txtausername = 2131230865;
 			
-			// aapt resource value: 0x7f0800ea
-			public const int txtcentre = 2131230954;
+			// aapt resource value: 0x7f0800eb
+			public const int txtcentre = 2131230955;
 			
-			// aapt resource value: 0x7f080119
-			public const int txtcfeat = 2131231001;
+			// aapt resource value: 0x7f080194
+			public const int txtcfeat = 2131231124;
 			
-			// aapt resource value: 0x7f08012c
-			public const int txtcnote = 2131231020;
+			// aapt resource value: 0x7f080154
+			public const int txtcnote = 2131231060;
 			
-			// aapt resource value: 0x7f080129
-			public const int txtcomp = 2131231017;
+			// aapt resource value: 0x7f080151
+			public const int txtcomp = 2131231057;
 			
-			// aapt resource value: 0x7f08012b
-			public const int txtcphone = 2131231019;
+			// aapt resource value: 0x7f080153
+			public const int txtcphone = 2131231059;
 			
 			// aapt resource value: 0x7f0800bc
 			public const int txtdcentre = 2131230908;
@@ -3456,8 +3684,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800b7
 			public const int txtddegree = 2131230903;
 			
-			// aapt resource value: 0x7f0800dd
-			public const int txtdegree = 2131230941;
+			// aapt resource value: 0x7f0800de
+			public const int txtdegree = 2131230942;
 			
 			// aapt resource value: 0x7f0800ba
 			public const int txtdemail = 2131230906;
@@ -3471,14 +3699,17 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800bb
 			public const int txtdgender = 2131230907;
 			
-			// aapt resource value: 0x7f08011a
-			public const int txtdiag = 2131231002;
+			// aapt resource value: 0x7f080195
+			public const int txtdiag = 2131231125;
 			
 			// aapt resource value: 0x7f0800b6
 			public const int txtdname = 2131230902;
 			
 			// aapt resource value: 0x7f0800c3
 			public const int txtdocremarks = 2131230915;
+			
+			// aapt resource value: 0x7f080199
+			public const int txtdose = 2131231129;
 			
 			// aapt resource value: 0x7f0800b9
 			public const int txtdphone = 2131230905;
@@ -3489,83 +3720,110 @@ namespace Hospitab
 			// aapt resource value: 0x7f0800b2
 			public const int txtdto = 2131230898;
 			
-			// aapt resource value: 0x7f0800e3
-			public const int txtemail = 2131230947;
+			// aapt resource value: 0x7f0800e4
+			public const int txtemail = 2131230948;
 			
-			// aapt resource value: 0x7f080151
-			public const int txtemrno = 2131231057;
+			// aapt resource value: 0x7f08017d
+			public const int txtemrno = 2131231101;
 			
-			// aapt resource value: 0x7f080123
-			public const int txtfrom = 2131231011;
+			// aapt resource value: 0x7f080114
+			public const int txtfrom = 2131230996;
+			
+			// aapt resource value: 0x7f08013f
+			public const int txthist = 2131231039;
 			
 			// aapt resource value: 0x7f08009b
 			public const int txtlb = 2131230875;
 			
-			// aapt resource value: 0x7f080157
-			public const int txtlname = 2131231063;
+			// aapt resource value: 0x7f080183
+			public const int txtlname = 2131231107;
 			
-			// aapt resource value: 0x7f08015e
-			public const int txtloginname = 2131231070;
+			// aapt resource value: 0x7f0801a0
+			public const int txtloginname = 2131231136;
 			
-			// aapt resource value: 0x7f0800dc
-			public const int txtname = 2131230940;
+			// aapt resource value: 0x7f080197
+			public const int txtmed = 2131231127;
 			
-			// aapt resource value: 0x7f08014b
-			public const int txtoptno = 2131231051;
+			// aapt resource value: 0x7f0800dd
+			public const int txtname = 2131230941;
 			
-			// aapt resource value: 0x7f0800d3
-			public const int txtpassword = 2131230931;
+			// aapt resource value: 0x7f080173
+			public const int txtoptno = 2131231091;
 			
-			// aapt resource value: 0x7f08012a
-			public const int txtperson = 2131231018;
+			// aapt resource value: 0x7f0800d4
+			public const int txtpassword = 2131230932;
+			
+			// aapt resource value: 0x7f080152
+			public const int txtperson = 2131231058;
 			
 			// aapt resource value: 0x7f0800cd
 			public const int txtphn = 2131230925;
 			
-			// aapt resource value: 0x7f0800e1
-			public const int txtphone = 2131230945;
+			// aapt resource value: 0x7f0800e2
+			public const int txtphone = 2131230946;
 			
-			// aapt resource value: 0x7f080145
-			public const int txtptdt = 2131231045;
+			// aapt resource value: 0x7f08016d
+			public const int txtptdt = 2131231085;
 			
-			// aapt resource value: 0x7f08014a
-			public const int txtptname = 2131231050;
+			// aapt resource value: 0x7f080172
+			public const int txtptname = 2131231090;
 			
-			// aapt resource value: 0x7f08014e
-			public const int txtrecptno = 2131231054;
+			// aapt resource value: 0x7f080176
+			public const int txtrecptno = 2131231094;
 			
 			// aapt resource value: 0x7f0800cb
 			public const int txtreg = 2131230923;
 			
-			// aapt resource value: 0x7f0800df
-			public const int txtregno = 2131230943;
+			// aapt resource value: 0x7f0800e0
+			public const int txtregno = 2131230944;
 			
-			// aapt resource value: 0x7f08010d
-			public const int txtremarks = 2131230989;
-			
-			// aapt resource value: 0x7f0800f8
-			public const int txtremrno = 2131230968;
-			
-			// aapt resource value: 0x7f0800f7
-			public const int txtrname = 2131230967;
+			// aapt resource value: 0x7f08010e
+			public const int txtremarks = 2131230990;
 			
 			// aapt resource value: 0x7f0800f9
-			public const int txtrvisit = 2131230969;
+			public const int txtremrno = 2131230969;
 			
-			// aapt resource value: 0x7f0800d5
-			public const int txtsignup = 2131230933;
+			// aapt resource value: 0x7f0800f8
+			public const int txtrname = 2131230968;
 			
-			// aapt resource value: 0x7f080125
-			public const int txtto = 2131231013;
+			// aapt resource value: 0x7f0800fa
+			public const int txtrvisit = 2131230970;
 			
-			// aapt resource value: 0x7f08011b
-			public const int txttreat = 2131231003;
+			// aapt resource value: 0x7f0800d6
+			public const int txtsignup = 2131230934;
 			
-			// aapt resource value: 0x7f0800e7
-			public const int txtuser = 2131230951;
+			// aapt resource value: 0x7f080148
+			public const int txttadvice = 2131231048;
 			
-			// aapt resource value: 0x7f0800d2
-			public const int txtusername = 2131230930;
+			// aapt resource value: 0x7f080142
+			public const int txttcfeat = 2131231042;
+			
+			// aapt resource value: 0x7f080143
+			public const int txttdiag = 2131231043;
+			
+			// aapt resource value: 0x7f080147
+			public const int txttdose = 2131231047;
+			
+			// aapt resource value: 0x7f080145
+			public const int txttmed = 2131231045;
+			
+			// aapt resource value: 0x7f080116
+			public const int txtto = 2131230998;
+			
+			// aapt resource value: 0x7f080196
+			public const int txttreat = 2131231126;
+			
+			// aapt resource value: 0x7f08014b
+			public const int txttremarks = 2131231051;
+			
+			// aapt resource value: 0x7f080144
+			public const int txtttreat = 2131231044;
+			
+			// aapt resource value: 0x7f0800e8
+			public const int txtuser = 2131230952;
+			
+			// aapt resource value: 0x7f0800d3
+			public const int txtusername = 2131230931;
 			
 			// aapt resource value: 0x7f08002d
 			public const int uniform = 2131230765;
@@ -3576,14 +3834,14 @@ namespace Hospitab
 			// aapt resource value: 0x7f080026
 			public const int useLogo = 2131230758;
 			
-			// aapt resource value: 0x7f08014d
-			public const int user = 2131231053;
+			// aapt resource value: 0x7f080175
+			public const int user = 2131231093;
 			
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f080160
-			public const int visible = 2131231072;
+			// aapt resource value: 0x7f0801a2
+			public const int visible = 2131231138;
 			
 			// aapt resource value: 0x7f08003c
 			public const int withText = 2131230780;
@@ -3807,10 +4065,10 @@ namespace Hospitab
 			public const int EyeDetails = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int eyeentry = 2130968629;
+			public const int filter_admin = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int filter_admin = 2130968630;
+			public const int hair_entry = 2130968630;
 			
 			// aapt resource value: 0x7f040037
 			public const int Help_admin = 2130968631;
@@ -3819,94 +4077,103 @@ namespace Hospitab
 			public const int layoutpt = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int ListItem = 2130968633;
+			public const int list_item = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int ListReport = 2130968634;
+			public const int ListItem = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int nav_header_main = 2130968635;
+			public const int ListReport = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_action = 2130968636;
+			public const int nav_header_main = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_action_tombstone = 2130968637;
+			public const int notification_action = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_media_action = 2130968638;
+			public const int notification_action_tombstone = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int notification_media_cancel_action = 2130968639;
+			public const int notification_media_action = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int notification_template_big_media = 2130968640;
+			public const int notification_media_cancel_action = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int notification_template_big_media_custom = 2130968641;
+			public const int notification_template_big_media = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int notification_template_big_media_narrow = 2130968642;
+			public const int notification_template_big_media_custom = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int notification_template_big_media_narrow_custom = 2130968643;
+			public const int notification_template_big_media_narrow = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public const int notification_template_custom_big = 2130968644;
+			public const int notification_template_big_media_narrow_custom = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public const int notification_template_icon_group = 2130968645;
+			public const int notification_template_custom_big = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public const int notification_template_lines_media = 2130968646;
+			public const int notification_template_icon_group = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public const int notification_template_media = 2130968647;
+			public const int notification_template_lines_media = 2130968647;
 			
 			// aapt resource value: 0x7f040048
-			public const int notification_template_media_custom = 2130968648;
+			public const int notification_template_media = 2130968648;
 			
 			// aapt resource value: 0x7f040049
-			public const int notification_template_part_chronometer = 2130968649;
+			public const int notification_template_media_custom = 2130968649;
 			
 			// aapt resource value: 0x7f04004a
-			public const int notification_template_part_time = 2130968650;
+			public const int notification_template_part_chronometer = 2130968650;
 			
 			// aapt resource value: 0x7f04004b
-			public const int patho_details = 2130968651;
+			public const int notification_template_part_time = 2130968651;
 			
 			// aapt resource value: 0x7f04004c
-			public const int patient_details = 2130968652;
+			public const int patho_details = 2130968652;
 			
 			// aapt resource value: 0x7f04004d
-			public const int patient_login = 2130968653;
+			public const int patient_details = 2130968653;
 			
 			// aapt resource value: 0x7f04004e
-			public const int Ptdesign = 2130968654;
+			public const int patient_login = 2130968654;
 			
 			// aapt resource value: 0x7f04004f
-			public const int ptlistdesign = 2130968655;
+			public const int prescdetails = 2130968655;
 			
 			// aapt resource value: 0x7f040050
-			public const int regpat = 2130968656;
+			public const int Ptdesign = 2130968656;
 			
 			// aapt resource value: 0x7f040051
-			public const int select_dialog_item_material = 2130968657;
+			public const int ptlistdesign = 2130968657;
 			
 			// aapt resource value: 0x7f040052
-			public const int select_dialog_multichoice_material = 2130968658;
+			public const int regpat = 2130968658;
 			
 			// aapt resource value: 0x7f040053
-			public const int select_dialog_singlechoice_material = 2130968659;
+			public const int select_dialog_item_material = 2130968659;
 			
 			// aapt resource value: 0x7f040054
-			public const int support_simple_spinner_dropdown_item = 2130968660;
+			public const int select_dialog_multichoice_material = 2130968660;
 			
 			// aapt resource value: 0x7f040055
-			public const int tooltip = 2130968661;
+			public const int select_dialog_singlechoice_material = 2130968661;
 			
 			// aapt resource value: 0x7f040056
-			public const int verify_list = 2130968662;
+			public const int Skin_Entry = 2130968662;
+			
+			// aapt resource value: 0x7f040057
+			public const int support_simple_spinner_dropdown_item = 2130968663;
+			
+			// aapt resource value: 0x7f040058
+			public const int tooltip = 2130968664;
+			
+			// aapt resource value: 0x7f040059
+			public const int verify_list = 2130968665;
 			
 			static Layout()
 			{
@@ -4058,11 +4325,11 @@ namespace Hospitab
 			// aapt resource value: 0x7f09002a
 			public const int action_settings = 2131296298;
 			
-			// aapt resource value: 0x7f09002f
-			public const int age_prompt = 2131296303;
+			// aapt resource value: 0x7f090030
+			public const int age_prompt = 2131296304;
 			
-			// aapt resource value: 0x7f090031
-			public const int apower_prompt = 2131296305;
+			// aapt resource value: 0x7f090032
+			public const int apower_prompt = 2131296306;
 			
 			// aapt resource value: 0x7f090027
 			public const int app_name = 2131296295;
@@ -4070,8 +4337,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f09001e
 			public const int appbar_scrolling_view_behavior = 2131296286;
 			
-			// aapt resource value: 0x7f090033
-			public const int axis_prompt = 2131296307;
+			// aapt resource value: 0x7f090034
+			public const int axis_prompt = 2131296308;
 			
 			// aapt resource value: 0x7f09001f
 			public const int bottom_sheet_behavior = 2131296287;
@@ -4100,8 +4367,8 @@ namespace Hospitab
 			// aapt resource value: 0x7f090025
 			public const int path_password_strike_through = 2131296293;
 			
-			// aapt resource value: 0x7f090030
-			public const int power_prompt = 2131296304;
+			// aapt resource value: 0x7f090031
+			public const int power_prompt = 2131296305;
 			
 			// aapt resource value: 0x7f09002b
 			public const int progress_bar = 2131296299;
@@ -4116,10 +4383,13 @@ namespace Hospitab
 			public const int status_bar_notification_info_overflow = 2131296294;
 			
 			// aapt resource value: 0x7f09002e
-			public const int title_prompt = 2131296302;
+			public const int time_prompt = 2131296302;
 			
-			// aapt resource value: 0x7f090032
-			public const int vision_prompt = 2131296306;
+			// aapt resource value: 0x7f09002f
+			public const int title_prompt = 2131296303;
+			
+			// aapt resource value: 0x7f090033
+			public const int vision_prompt = 2131296307;
 			
 			// aapt resource value: 0x7f09002d
 			public const int yn_prompt = 2131296301;

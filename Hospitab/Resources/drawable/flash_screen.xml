@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@android:color/white"></item>
+  <item>
+    <bitmap android:src="@drawable/medilogonew"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:gravity="center"
+        android:background="#19185f"></bitmap>
+  </item>
+</layer-list>

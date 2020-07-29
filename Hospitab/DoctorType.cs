@@ -17,7 +17,8 @@ namespace Hospitab
     [Activity(Label = "@string/app_name", Theme = "@style/NAppTheme")]
     public class DoctorType : AppCompatActivity
     {
-        Button btnpresc;
+        Button btnder;
+        Button btntri;
         Button btndocptlist;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -25,10 +26,26 @@ namespace Hospitab
             SetContentView(Resource.Layout.Doctor_type);
             Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.dtoolbar    );
             SetSupportActionBar(toolbar);
-            btnpresc = FindViewById<Button>(Resource.Id.btnPresc);
+            btnder = FindViewById<Button>(Resource.Id.btnDPresc);
+            btntri = FindViewById<Button>(Resource.Id.btnTPresc);
             btndocptlist = FindViewById<Button>(Resource.Id.btnDocPtList);
-            btnpresc.Click += Btnpresc_Click;
+            btnder.Click += Btnder_Click;
+            btntri.Click += Btntri_Click;
             btndocptlist.Click += Btndocptlist_Click;
+        }
+
+        private void Btntri_Click(object sender, EventArgs e)
+        {
+            var activity = new Intent(this, typeof(PatReg));
+            activity.PutExtra("etype", "Trichology");
+            StartActivity(activity);
+        }
+
+        private void Btnder_Click(object sender, EventArgs e)
+        {
+            var activity = new Intent(this, typeof(PatReg));
+            activity.PutExtra("etype", "Dermatology");
+            StartActivity(activity);
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)
@@ -86,17 +103,17 @@ namespace Hospitab
             StartActivity(typeof(DocPtFilter));
         }
 
-        private void Btnpresc_Click(object sender, EventArgs e)
-        {
-            StartActivity(typeof(PatReg));
-        }
+        //private void Btnpresc_Click(object sender, EventArgs e)
+        //{
+        //    StartActivity(typeof(PatReg));
+        //}
 
         public override void OnBackPressed()
         {
             RunOnUiThread(
             async () =>
             {
-            var isCloseApp = await AlertAsync(this, "DERMA-SWASTHA", "Do you want to close this app?", "Yes", "No");
+            var isCloseApp = await AlertAsync(this, "MEDI-SWASTHA", "Do you want to close this app?", "Yes", "No");
 
                 if (isCloseApp)
                 {
